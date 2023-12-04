@@ -6,3 +6,15 @@ header a {
 header svg {
   width: 100%;
 }
+
+
+footer svg {
+  /* position: relative;
+  bottom: min(1.3333333333vw, 0.75rem); */
+  width: clamp(3.125rem, 10.2222222222vw, 5.875rem);
+  height: clamp(3.125rem, 10.2222222222vw, 5.875rem);
+  fill: none;
+  stroke: #212121;
+  stroke-width: min(0.3571428571vw, 0.125rem);
+  cursor: pointer;
+}

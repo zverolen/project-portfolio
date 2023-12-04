@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types'
 
-
 export default function Project({
   project
  }) {
   return(
     <div key={project.id}>
       <h3>{project.name}</h3>
+      <img 
+        src={`./../../images/${project.imageToken}.png`}
+        alt={`A computer and a smartphone with views of the project ${project.name}`}
+      />
       <h4>Description</h4>
       <p>{project.description}</p>
       <h4>Features</h4>
@@ -23,6 +26,7 @@ export default function Project({
   project: PropTypes.shape({
     id: PropTypes.number,
     name: PropTypes.string,
+    imageToken: PropTypes.string,
     description: PropTypes.string, 
     features: PropTypes.array,
     linkGithubText: PropTypes.string, 
