@@ -1,5 +1,16 @@
 :root {
   /* Primitive Tokens */
+
+  /* Colors */
+  --colorBlack: #424242;
+  --colorWhite: #FAFAFA;
+  --colorGreyLight: #EEECEE;
+  --colorGreyDark: #616161;
+  --colorPurple: #462255;
+  --colorRed: #D3715C;
+  --colorBlue: #639CA8;
+
+  /* Typography */
   --fontFamilyPrimary: Poppins;
   --fontFamilySecondary: Forum;
   --fontFamilyPrimaryFallBack: Verdana;
