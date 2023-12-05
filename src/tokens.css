@@ -1,0 +1,15 @@
+:root {
+  /* Primitive Tokens */
+  --fontFamilyPrimary: Poppins;
+  --fontFamilySecondary: Forum;
+  --fontFamilyPrimaryFallBack: Verdana;
+  --fontFamilySecondaryFallBack: Georgia;
+
+  --fontWeightPrimary: 300;
+  --fontWeightSecondary: 500;
+  --fontWeightAlternative: 600;
+
+  /* Semantic tokens */
+  --body-text-font-family: var(--fontFamilyPrimary), var(--fontFamilyPrimaryFallBack), sans-serif;
+  --heading-font-family: var(--fontFamilySecondary), var(--fontFamilySecondaryFallBack), serif;
+}
