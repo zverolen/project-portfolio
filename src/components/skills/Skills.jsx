@@ -5,7 +5,7 @@ export default function Skills() {
   const secondarySkills = skills.secondary.map((skill, index) => <li key={index}>{skill},</li>)
   
   return (
-    <section>
+    <section className="skills">
       <h2>Skills and approach</h2>
       <ul>
         {primarySkills}

@@ -1,36 +1,198 @@
+@layer reset, tokens, general, specific, theme.light, theme.dark, states, overrides;
+
 @import url("font.css");
-@import url("tokens.css");
+@import url("tokens.css") layer(tokens);
 
-body {
-  font-family: var(--body-text-font-family);
-  font-weight: var(--fontWeightPrimary);
+@layer overrides {
+  /* Visually hidden elements are visible to screen readers */
+  .visually-hidden {
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 }
 
-h1, h2, h3 {
-  font-weight: var(--fontWeightSecondary);
+@media (prefers-color-scheme: light) {
+  @layer theme.light {
+    :root {
+      --site-text-color: var(--colorBlack);
+      --site-background-color: var(--colorWhite);
+      --skills-background-color: var(--colorGreyLight);
+      --accent-color: var(--colorPurple);
+      --text-link-color: var(--colorGreyDark);
+      --footer-background-color: var(--site-text-color);
+      --decorative-color-I: var(--colorRed);
+      --decorative-color-II: var(--colorBlue);
+    }
+
+    body {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color)
+    }
+
+    h1 span:nth-child(1), h1 span:nth-child(3) {
+      --text-color: var(--site-background-color);
+    }
+
+    h1 span:nth-child(1) {
+      --background-color: var(--decorative-color-I);
+    }
+
+    h1 span:nth-child(2) {
+      --text-color: var(--accent-color);
+    }
+
+    h1 span:nth-child(3) {
+      --background-color: var(--decorative-color-II);
+    }
+
+    header svg {
+      --stroke-color: var(--accent-color);
+      --fill-color: var(--site-background-color);
+    }
+
+    .skills {
+      --background-color: var(--skills-background-color);
+    }
+
+    .projects h2 {
+      --background-color: var(--accent-color);
+      --text-color: var(--site-background-color);
+    }
+
+    .projects a {
+      --text-color: var(--text-link-color);
+      --background-color: var(--text-background-color);
+    }
+
+    .about, footer {
+      --background-color: var(--site-text-color);
+      --text-color: var(--site-background-color);
+    }
+
+    footer path {
+      --stroke-color: var(--site-background-color);
+      --fill-color: var(--footer-background-color);
+    }
+  }
 }
 
-h1 {
-  font-family: var(--heading-font-family);
+@media (prefers-color-scheme: dark) {
+  
 }
 
-header a {
-  display: inline-block;
-  max-width: 50px;
+@layer general {
+  body {
+    font-family: var(--body-text-font-family);
+    font-weight: var(--fontWeightPrimary);
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a, path {
+      transition: all 0.3s ease-out;
+    }
+  }
+  
+  h1, h2, h3 {
+    font-weight: var(--fontWeightSecondary);
+  }
+  
+  h1 {
+    font-family: var(--heading-font-family);
+  }
+
+  h1 span:nth-child(1) {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  h1 span:nth-child(2) {
+    color: var(--text-color);
+  }
+
+  h1 span:nth-child(3) {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  header a {
+    display: inline-block;
+    width: clamp(3.125rem, 10.2222222222vw, 5.875rem);
+    height: clamp(3.125rem, 10.2222222222vw, 5.875rem);
+    cursor: pointer;
+  }
+  
+  header svg {
+    width: 100%;
+    stroke: var(--stroke-color);
+    stroke-width: min(0.3571428571vw, 0.125rem);
+    fill: var(--fill-color);
+  }
+
+  .skills {
+    background-color: var(--background-color);
+  }
+
+  .projects h2 {
+    font-family: var(--heading-font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  .projects a {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  .about {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  footer {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  footer a {
+    display: block;
+    width: clamp(3.125rem, 10.2222222222vw, 5.875rem);
+    height: clamp(3.125rem, 10.2222222222vw, 5.875rem);
+    cursor: pointer;
+  }
+  
+  footer svg {
+    /* position: relative;
+    bottom: min(1.3333333333vw, 0.75rem); */
+    width: 100%;
+    fill: none;
+    stroke-width: min(0.3571428571vw, 0.125rem);
+  }
+
+  footer path {
+    stroke: var(--stroke-color);
+    fill: var(--fill-color);
+  }
 }
 
-header svg {
-  width: 100%;
-}
+@layer states {
+  header a:hover svg, header a:focus-visible svg {
+    --fill-color: var(--accent-color)
+  }
 
+  .projects a:hover, .projects a:focus-visible {
+    --text-color: var(--site-background-color);
+    --background-color: var(--text-link-color);
+  }
 
-footer svg {
-  /* position: relative;
-  bottom: min(1.3333333333vw, 0.75rem); */
-  width: clamp(3.125rem, 10.2222222222vw, 5.875rem);
-  height: clamp(3.125rem, 10.2222222222vw, 5.875rem);
-  fill: none;
-  stroke: #212121;
-  stroke-width: min(0.3571428571vw, 0.125rem);
-  cursor: pointer;
+  footer a:hover path, footer a:focus-visible path{
+    --fill-color: var(--site-background-color);
+  }
 }
