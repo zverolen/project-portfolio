@@ -20,7 +20,23 @@
   --fontWeightSecondary: 500;
   --fontWeightAlternative: 600;
 
+  --skillsHeadingFontMin: 1rem;
+  --skillsHeadingFontIdeal: 5.1vw;
+  --skillsHeadingFontMax: calc(46 / 16 * 1rem);
+
+  --skillPrimaryFontMin: calc(18 / 16 * 1rem);
+  --skillPrimaryFontIdeal: 4.4444444444vw;
+  --skillPrimaryFontMax: calc(40 / 16 * 1rem);
+  --skillSecondaryFontMin: 1rem;
+  --skillSecondaryFontIdeal: 3.1vw;
+  --skillSecondaryFontMax: calc(28 / 16 * 1rem);
+
+  --skillsTextTransform: uppercase;
+
   /* Sizing */
+  --fullWidth: 100%;
+  --resetMargin: 0;
+
   --gap-0-I: calc(4 / 16 * 1rem);
   --gap-I: calc(8 / 16 * 1rem);
   --gap-II: 1rem;
@@ -33,7 +49,15 @@
   --contentWidthMax: 100vw - 2rem; */
 
   --skillsGapMaxValue: 7.1111111111vw;
+  --skillsHeadingWidth: 12.1739130435em;
+  --skillsHeadingFrameHeight: 2.1304347826em;
+  --skillsFrameBorderMin: 0.3571428571vw;
+  --skillsFrameBorderMax: calc(2 / 16 * 1rem);
+  --skillsHorizontalGap: calc(32 / 16 * 1rem);
+  --skillsVerticalGap: calc(24 / 16 * 1rem);
   
+  /* Layout */
+  --centering-margin: auto;
 
   /* Semantic tokens */
 

@@ -60,6 +60,10 @@
       --background-color: var(--skills-background-color);
     }
 
+    .skills div:nth-child(1)::after {
+      --border-color: var(--accent-color);
+    }
+
     .projects h2 {
       --background-color: var(--accent-color);
       --text-color: var(--site-background-color);
@@ -147,6 +151,53 @@
     padding-bottom: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));
     
     background-color: var(--background-color);
+  }
+
+  .skills div:nth-child(1) {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: var(--skillsHeadingWidth);
+    margin-inline: var(--centering-margin);
+    font-size: clamp(var(--skillsHeadingFontMin), var(--skillsHeadingFontIdeal), var(--skillsHeadingFontMax));
+  }
+
+  .skills div:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    height: var(--skillsHeadingFrameHeight);
+    width: var(--fullWidth);
+    border: min(var(--skillsFrameBorderMin), var(--skillsFrameBorderMax)) var(--border-color) solid;
+  }
+
+  .skills h2 {
+    margin: var(--resetMargin);
+
+    text-align: center;
+    font-size: inherit;
+  }
+
+  .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: var(--skillsHorizontalGap);
+    row-gap: var(--skillsVerticalGap);
+  }
+
+  .skills li {
+    text-transform: var(--skillsTextTransform);
+  }
+
+  .skills ul:nth-of-type(1) li {
+    font-size: clamp(var(--skillPrimaryFontMin), var(--skillPrimaryFontIdeal), var(--skillPrimaryFontMax));
+  }
+
+  .skills ul:nth-of-type(2) li {
+    font-size: clamp(var(--skillSecondaryFontMin), var(--skillSecondaryFontIdeal), var(--skillSecondaryFontMax));
   }
 
   .projects h2 {
