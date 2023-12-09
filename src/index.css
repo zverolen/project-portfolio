@@ -2,6 +2,7 @@
 
 @import url("font.css");
 @import url("tokens.css") layer(tokens);
+@import url("reset.css") layer(reset);
 
 @layer overrides {
   /* Visually hidden elements are visible to screen readers */
@@ -137,6 +138,14 @@
   }
 
   .skills {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: min(var(--skills-gap-min), var(--skills-gap-max));
+
+    padding-bottom: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));
+    
     background-color: var(--background-color);
   }
 

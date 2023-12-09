@@ -20,7 +20,30 @@
   --fontWeightSecondary: 500;
   --fontWeightAlternative: 600;
 
+  /* Sizing */
+  --gap-0-I: calc(4 / 16 * 1rem);
+  --gap-I: calc(8 / 16 * 1rem);
+  --gap-II: 1rem;
+  --gap-III: calc(24 / 16 * 1rem);
+  --gap-IV: calc(32 /  16 * 1rem);
+  --gap-V: calc(48 / 16 * 1rem);
+  --gap-VI: calc(64 / 16 * 1rem);
+
+  /* --contentWidthMin: 1280 / 16 * 1rem;
+  --contentWidthMax: 100vw - 2rem; */
+
+  --skillsGapMaxValue: 7.1111111111vw;
+  
+
   /* Semantic tokens */
+
+  /* Typography */
   --body-text-font-family: var(--fontFamilyPrimary), var(--fontFamilyPrimaryFallBack), sans-serif;
   --heading-font-family: var(--fontFamilySecondary), var(--fontFamilySecondaryFallBack), serif;
+
+  /* Sizing */
+  --skills-padding-bottom-min: var(--gap-VI);
+  --skills-padding-bottom-max: var(--skillsGapMaxValue);
+  --skills-gap-min: var(--skills-padding-bottom-min);
+  --skills-gap-max: var(--skills-padding-bottom-max);
 }
