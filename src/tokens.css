@@ -20,6 +20,14 @@
   --fontWeightSecondary: 500;
   --fontWeightAlternative: 600;
 
+  --textSizeMin: 1rem;
+  --textSizeIdeal: 2.6vw;
+  --textSizeMax: calc(24 / 16 * 1rem);
+
+  --headingTwoFontMin: calc(24 / 16 * 1rem);
+  --headingTwoFontIdeal: 7.1vw;
+  --headingTwoFontMax: calc(64 / 16 * 1rem);
+
   --skillsHeadingFontMin: 1rem;
   --skillsHeadingFontIdeal: 5.1vw;
   --skillsHeadingFontMax: calc(46 / 16 * 1rem);
@@ -33,9 +41,19 @@
 
   --skillsTextTransform: uppercase;
 
+  --projectsSubheadingFontMin: 1rem;
+  --projectsSubheadingFontIdeal: 3.6vw;
+  --projectsSubheadingFontMax: calc(32 / 16 * 1rem);
+
   /* Sizing */
   --fullWidth: 100%;
   --resetMargin: 0;
+  --resetNumber: 0;
+
+  --verticalCenteringBottom: 50%;
+  --verticalCenteringTranslate: translateY(50%);
+
+  --siteWidthMin: calc(1280 / 16 * 1rem);
 
   --gap-0-I: calc(4 / 16 * 1rem);
   --gap-I: calc(8 / 16 * 1rem);
@@ -48,13 +66,29 @@
   /* --contentWidthMin: 1280 / 16 * 1rem;
   --contentWidthMax: 100vw - 2rem; */
 
+  --frameBorderMin: 0.3571428571vw;
+  --frameBorderMax: calc(2 / 16 * 1rem);
+
+  --border-width: min(var(--frameBorderMin), var(--frameBorderMax));
+
   --skillsGapMaxValue: 7.1111111111vw;
   --skillsHeadingWidth: 12.1739130435em;
   --skillsHeadingFrameHeight: 2.1304347826em;
-  --skillsFrameBorderMin: 0.3571428571vw;
-  --skillsFrameBorderMax: calc(2 / 16 * 1rem);
   --skillsHorizontalGap: calc(32 / 16 * 1rem);
   --skillsVerticalGap: calc(24 / 16 * 1rem);
+
+  --projectsHeadingFrameWidth: 48.4126984127vw;
+  --projectsHeadingFrameHeight: 1.75em;
+
+  --projectsNoteMarginTopMin: calc(76 / 16 * 1rem);
+  --projectsNoteMarginBottomMin: calc(64 / 16 * 1rem);
+  --projectsNoteMarginMax: 7.1vw;
+
+  --projectsGapMin: var(--gap-IV);
+  --projectsGapMax: 3.56vw;
+
+  --projectFeaturesGapMin: var(--gap-II);
+  --projectFeaturesGapMax: 1.78vw;
   
   /* Layout */
   --centering-margin: auto;
@@ -66,8 +100,12 @@
   --heading-font-family: var(--fontFamilySecondary), var(--fontFamilySecondaryFallBack), serif;
 
   /* Sizing */
+  --site-width: min(var(--siteWidthMin), 100vw - 2rem);
+
   --skills-padding-bottom-min: var(--gap-VI);
   --skills-padding-bottom-max: var(--skillsGapMaxValue);
   --skills-gap-min: var(--skills-padding-bottom-min);
   --skills-gap-max: var(--skills-padding-bottom-max);
+
+  --projects-gap: min(var(--projectsGapMin), var(--projectsGapMax));
 }

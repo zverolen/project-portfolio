@@ -6,11 +6,13 @@ export default function Projects() {
   const projectMapped = projects.projects.map(project => <Project key={project.id} project={project} />)
   return (
     <section className="projects">
-      <h2>{projects.heading}</h2>
-      <p>{projects.note}</p>
       <div>
-        {projectMapped}
+        <h2>{projects.heading}</h2>
       </div>
+      <p>{projects.note}</p>
+      <ul role="list">
+        {projectMapped}
+      </ul>
     </section>
   )
 }
