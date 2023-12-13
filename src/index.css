@@ -391,12 +391,26 @@
   .project h3 + div > div, .project ul {
     display: flex;
     flex-direction: column;
-    row-gap: min(var(--projectFeaturesGapMin), var(--projectFeaturesGapMax));
+    row-gap: var(--project-features-gap);
   }
 
   .project li {
+    display: flex;
+    align-items: baseline;
+    column-gap: var(--project-features-gap);
+
     list-style: none;
   }
+
+  .project li span:nth-child(1) {
+    flex-shrink: 0;
+  }
+
+  .project svg {
+    width: var(--project-bullet-size);
+    height: var(--project-bullet-size);
+  }
+
 
   .project svg rect {
     fill: var(--fill-color);
@@ -404,6 +418,7 @@
   }
 
   .project a {
+    font-weight: var(--fontWeightAlternative);
     color: var(--text-color);
     background-color: var(--background-color);
   }

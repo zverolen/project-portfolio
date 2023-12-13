@@ -89,7 +89,10 @@
 
   --projectFeaturesGapMin: var(--gap-II);
   --projectFeaturesGapMax: 1.78vw;
-  
+
+  --projectBulletSizeMin: calc(12 / 16 * 1rem);
+  --projectBulletSizeMax: 1.3vw;
+
   /* Layout */
   --centering-margin: auto;
 
@@ -108,4 +111,6 @@
   --skills-gap-max: var(--skills-padding-bottom-max);
 
   --projects-gap: min(var(--projectsGapMin), var(--projectsGapMax));
+  --project-features-gap: min(var(--projectFeaturesGapMin), var(--projectFeaturesGapMax));
+  --project-bullet-size: max(var(--projectBulletSizeMin), var(--projectBulletSizeMax));
 }
