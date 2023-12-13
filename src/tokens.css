@@ -69,8 +69,6 @@
   --frameBorderMin: 0.3571428571vw;
   --frameBorderMax: calc(2 / 16 * 1rem);
 
-  --border-width: min(var(--frameBorderMin), var(--frameBorderMax));
-
   --skillsGapMaxValue: 7.1111111111vw;
   --skillsHeadingWidth: 12.1739130435em;
   --skillsHeadingFrameHeight: 2.1304347826em;
@@ -93,6 +91,8 @@
   --projectBulletSizeMin: calc(12 / 16 * 1rem);
   --projectBulletSizeMax: 1.3vw;
 
+  --buttonPadding: 0.2857142857em;
+
   /* Layout */
   --centering-margin: auto;
 
@@ -102,8 +102,11 @@
   --body-text-font-family: var(--fontFamilyPrimary), var(--fontFamilyPrimaryFallBack), sans-serif;
   --heading-font-family: var(--fontFamilySecondary), var(--fontFamilySecondaryFallBack), serif;
 
+  --secondary-skill-font-size: clamp(var(--skillSecondaryFontMin), var(--skillSecondaryFontIdeal), var(--skillSecondaryFontMax));
+
   /* Sizing */
   --site-width: min(var(--siteWidthMin), 100vw - 2rem);
+  --border-width: min(var(--frameBorderMin), var(--frameBorderMax));
 
   --skills-padding-bottom-min: var(--gap-VI);
   --skills-padding-bottom-max: var(--skillsGapMaxValue);
@@ -113,4 +116,6 @@
   --projects-gap: min(var(--projectsGapMin), var(--projectsGapMax));
   --project-features-gap: min(var(--projectFeaturesGapMin), var(--projectFeaturesGapMax));
   --project-bullet-size: max(var(--projectBulletSizeMin), var(--projectBulletSizeMax));
+
+  --button-outline-offset: var(--gap-I);
 }

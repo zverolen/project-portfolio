@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import Button from '../button/Button';
 
 const svg = <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.541016" y="7.79956" width="14.0002" height="15.0146"></rect>
@@ -34,6 +35,9 @@ export default function Project({
             <a href={project.linkGithubHref}>{project.linkGithubText}</a>
           </div>
         </div>
+      </div>
+      <div>
+        <Button isExpanded={true} />
       </div>
     </li>
   )

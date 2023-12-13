@@ -97,6 +97,12 @@
       --background-color: var(--text-background-color);
     }
 
+    button {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color);
+      --border-color: var(--site-text-color);
+    }
+
     .about, footer {
       --background-color: var(--site-text-color);
       --text-color: var(--site-background-color);
@@ -189,6 +195,12 @@
       --background-color: var(--text-background-color);
     }
 
+    button {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color);
+      --border-color: var(--site-text-color);
+    }
+
     .about, footer {
       --background-color: var(--site-text-color);
       --text-color: var(--site-background-color);
@@ -212,7 +224,7 @@
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    a, path {
+    a, path, button {
       transition: all 0.3s ease-out;
     }
   }
@@ -312,7 +324,7 @@
   }
 
   .skills ul:nth-of-type(2) li {
-    font-size: clamp(var(--skillSecondaryFontMin), var(--skillSecondaryFontIdeal), var(--skillSecondaryFontMax));
+    font-size: var(--secondary-skill-font-size);
   }
 
   .projects > div:nth-child(1) {
@@ -362,9 +374,13 @@
 
   .project {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     row-gap: var(--projects-gap);
+
     padding: var(--projects-gap);
+
     border: var(--border-width) var(--border-color) solid;
   }
 
@@ -411,7 +427,6 @@
     height: var(--project-bullet-size);
   }
 
-
   .project svg rect {
     fill: var(--fill-color);
     stroke: var(--stroke-color);
@@ -421,6 +436,22 @@
     font-weight: var(--fontWeightAlternative);
     color: var(--text-color);
     background-color: var(--background-color);
+  }
+
+  button {
+    padding: var(--buttonPadding);
+
+    font-family: var(--body-text-font-family);
+    font-size: var(--secondary-skill-font-size);
+    text-decoration: underline;
+    font-weight: var(--fontWeightPrimary);
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+    border: var(--border-width) solid var(--border-color);
+    
+    cursor: pointer;
   }
 
   .about {
@@ -462,6 +493,14 @@
   .project a:hover, .project a:focus-visible {
     --text-color: var(--site-background-color);
     --background-color: var(--text-link-color);
+  }
+
+  button:hover, button:focus-visible {
+    --text-color: var(--site-background-color);
+    --background-color: var(--accent-color);
+    --border-color: var(--accent-color);
+
+    outline-offset: var(--button-outline-offset);
   }
 
   footer a:hover path, footer a:focus-visible path{
