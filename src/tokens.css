@@ -10,7 +10,7 @@
   --colorRed: #D3715C;
   --colorBlue: #639CA8;
 
-  /* Typography */
+  /* Typography | Primitive */
   --fontFamilyPrimary: Poppins;
   --fontFamilySecondary: Forum;
   --fontFamilyPrimaryFallBack: Verdana;
@@ -45,7 +45,8 @@
   --projectsSubheadingFontIdeal: 3.6vw;
   --projectsSubheadingFontMax: calc(32 / 16 * 1rem);
 
-  /* Sizing */
+  /* Sizing | Primitive */
+
   --fullWidth: 100%;
   --resetMargin: 0;
   --resetNumber: 0;
@@ -63,11 +64,12 @@
   --gap-V: calc(48 / 16 * 1rem);
   --gap-VI: calc(64 / 16 * 1rem);
 
-  /* --contentWidthMin: 1280 / 16 * 1rem;
-  --contentWidthMax: 100vw - 2rem; */
-
   --frameBorderMin: 0.3571428571vw;
   --frameBorderMax: calc(2 / 16 * 1rem);
+
+  --linkIconMin: calc(50 / 16 * 1rem);
+  --linkIconIdeal: 10.2vw;
+  --linkIconMax: calc(94 / 16 * 1rem);
 
   --skillsGapMaxValue: 7.1111111111vw;
   --skillsHeadingWidth: 12.1739130435em;
@@ -93,20 +95,36 @@
 
   --buttonPadding: 0.2857142857em;
 
-  /* Layout */
+  --aboutPaddingAbs: calc(100 / 16 * 1rem);
+  --aboutPaddingRel: 11.1111111111vw;
+
+  --aboutImageMin: calc(100 / 16 * 1rem);
+  --aboutImageIdeal: 20vw;
+  --aboutImageMax: calc(200 / 16 * 1rem);
+
+  --aboutImgMarginAbs: var(--gap-VI);
+  --aboutImgMarginRel: 7.1vw;
+
+  --aboutTextGapAbs: var(--gap-IV);
+  --aboutTextGapRel: 3.5555555556vw;
+
+  /* Layout | Primitive */
   --centering-margin: auto;
 
   /* Semantic tokens */
 
-  /* Typography */
+  /* Typography | Semantic*/
   --body-text-font-family: var(--fontFamilyPrimary), var(--fontFamilyPrimaryFallBack), sans-serif;
   --heading-font-family: var(--fontFamilySecondary), var(--fontFamilySecondaryFallBack), serif;
 
   --secondary-skill-font-size: clamp(var(--skillSecondaryFontMin), var(--skillSecondaryFontIdeal), var(--skillSecondaryFontMax));
+  --subheading-font-size: clamp(var(--projectsSubheadingFontMin), var(--projectsSubheadingFontIdeal), var(--projectsSubheadingFontMax));
 
   /* Sizing */
   --site-width: min(var(--siteWidthMin), 100vw - 2rem);
   --border-width: min(var(--frameBorderMin), var(--frameBorderMax));
+
+  --link-icon-size: clamp(var(--linkIconMin), var(--linkIconIdeal), var(--linkIconMax));
 
   --skills-padding-bottom-min: var(--gap-VI);
   --skills-padding-bottom-max: var(--skillsGapMaxValue);
@@ -118,4 +136,11 @@
   --project-bullet-size: max(var(--projectBulletSizeMin), var(--projectBulletSizeMax));
 
   --button-outline-offset: var(--gap-I);
+
+  --about-padding: min(var(--aboutPaddingAbs), var(--aboutPaddingRel));
+  --about-image-size: clamp(var(--aboutImageMin), var(--aboutImageIdeal), var(--aboutImageMax));
+  --about-gap: min(var(--aboutImgMarginAbs), var(--aboutImgMarginRel));
+  --about-text-gap: min(var(--aboutTextGapAbs), var(--aboutTextGapRel));
+
+  --contact-links-gap: var(--project-features-gap);
 }

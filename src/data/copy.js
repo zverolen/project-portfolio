@@ -65,7 +65,7 @@ export const about = {
 }
 
 export const contact = {
-  heading: "Contact me",
+  heading: "Contact:",
   tg: "t.me/zverolen",
   email: "zverolen@gmail.com"
 }
