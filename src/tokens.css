@@ -125,6 +125,7 @@
   --border-width: min(var(--frameBorderMin), var(--frameBorderMax));
 
   --link-icon-size: clamp(var(--linkIconMin), var(--linkIconIdeal), var(--linkIconMax));
+  --link-gap: var(--project-features-gap);
 
   --skills-padding-bottom-min: var(--gap-VI);
   --skills-padding-bottom-max: var(--skillsGapMaxValue);
