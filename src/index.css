@@ -252,6 +252,10 @@
   h1, h2, h3 {
     font-weight: var(--fontWeightSecondary);
   }
+
+  header {
+    padding-block-end: var(--header-padding);
+  }
   
   h1 {
     font-family: var(--heading-font-family);
@@ -430,8 +434,8 @@
     column-gap: var(--skillsHorizontalGap);
     row-gap: var(--skillsVerticalGap);
 
-    width: var(--site-width);
-    margin-inline: var(--centering-margin);
+    /* width: var(--site-width);
+    margin-inline: var(--centering-margin); */
   }
 
   .skills li {
@@ -468,8 +472,8 @@
   }
 
   .projects h2 {
-    width: var(--site-width);
-    margin-inline: var(--centering-margin);
+    /* width: var(--site-width);
+    margin-inline: var(--centering-margin); */
 
     font-family: var(--heading-font-family);
     font-size: inherit;
@@ -477,8 +481,8 @@
   }
 
   .projects > div:first-child + p {
-    width: var(--site-width);
-    margin-inline: var(--centering-margin);
+    /* width: var(--site-width);
+    margin-inline: var(--centering-margin); */
     margin-block-start: min(var(--projectsNoteMarginTopMin), var(--projectsNoteMarginMax));
     margin-block-end: min(var(--projectsNoteMarginBottomMin), var(--projectsNoteMarginMax));
   }
@@ -488,8 +492,8 @@
     flex-direction: column;
     row-gap: var(--projects-gap);
 
-    width: var(--site-width);
-    margin-inline: var(--centering-margin);
+    /* width: var(--site-width);
+    margin-inline: var(--centering-margin); */
   }
 
   .project {
@@ -603,8 +607,8 @@
   }
 
   .about h2 {
-    width: var(--site-width);
-    margin-inline: var(--centering-margin);
+    /* width: var(--site-width);
+    margin-inline: var(--centering-margin); */
 
     font-family: var(--heading-font-family);
     font-size: inherit;
@@ -612,8 +616,8 @@
   }
 
   .about > div:nth-child(2) {
-    width: var(--site-width);
-    margin-inline: var(--centering-margin);
+    /* width: var(--site-width);
+    margin-inline: var(--centering-margin); */
     padding-top: var(--about-padding);
   }
 
@@ -635,10 +639,10 @@
     background-color: var(--background-color);
   }
 
-  footer > div {
+  /* footer > div {
     width: var(--site-width);
     margin-inline: var(--centering-margin);
-  }
+  } */
 
   footer h2 {
     margin-block-end: var(--about-text-gap);

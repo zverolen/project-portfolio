@@ -4,9 +4,9 @@ export default function About() {
   return (
     <section className="about">
       <div>
-          <h2>{about.heading}</h2>
+          <h2 className="site-frame">{about.heading}</h2>
         </div>
-      <div>
+      <div className="site-frame">
         <img src="./../../images/portrait.png"/>
         <p>{about.p1}</p>
         <p>{about.p2}</p>

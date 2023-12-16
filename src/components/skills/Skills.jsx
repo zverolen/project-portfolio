@@ -7,10 +7,10 @@ export default function Skills() {
   return (
     <section className="skills">
       <div><h2>Skills and approach</h2></div>
-      <ul role="list">
+      <ul className="site-frame" role="list">
         {primarySkills}
       </ul>
-      <ul role="list">
+      <ul className="site-frame" role="list">
         {secondarySkills}
       </ul>
     </section>

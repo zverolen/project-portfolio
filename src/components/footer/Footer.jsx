@@ -4,7 +4,7 @@ import LinkWithIcon from "../linkWithIcon/LinkWithIcon"
 export default function Footer() {
   return (
     <footer>
-      <div>
+      <div className="site-frame">
         <h2>{contact.heading}</h2>
         <div>
           <LinkWithIcon linkHref={contact.tg} linkLabel="Telegram" >

@@ -7,10 +7,10 @@ export default function Projects() {
   return (
     <section className="projects">
       <div>
-        <h2>{projects.heading}</h2>
+        <h2 className="site-frame">{projects.heading}</h2>
       </div>
-      <p>{projects.note}</p>
-      <ul role="list">
+      <p className="site-frame">{projects.note}</p>
+      <ul className="site-frame" role="list">
         {projectMapped}
       </ul>
     </section>
