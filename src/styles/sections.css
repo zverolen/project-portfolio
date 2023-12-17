@@ -187,6 +187,10 @@
     font-size: var(--secondary-skill-font-size);
   }
 
+  .projects {
+    padding-block: var(--projects-padding-top) var(--projects-padding-bottom);
+  }
+
   .projects > div:nth-child(1) {
     /* position: relative; */
 

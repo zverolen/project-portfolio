@@ -95,8 +95,8 @@
 
   --buttonPadding: 0.2857142857em;
 
-  --aboutPaddingAbs: calc(100 / 16 * 1rem);
-  --aboutPaddingRel: 11.1111111111vw;
+  --sectionPaddingAbs: calc(100 / 16 * 1rem);
+  --sectionPaddingRel: 11.1111111111vw;
 
   --aboutImageMin: calc(100 / 16 * 1rem);
   --aboutImageIdeal: 20vw;
@@ -123,6 +123,7 @@
   /* Sizing */
   --site-width: min(var(--siteWidthMin), 100vw - 2rem);
   --border-width: min(var(--frameBorderMin), var(--frameBorderMax));
+  --section-padding: min(var(--sectionPaddingAbs), var(--sectionPaddingRel));
 
   --header-padding: var(--about-gap);
 
@@ -134,13 +135,15 @@
   --skills-gap-min: var(--skills-padding-bottom-min);
   --skills-gap-max: var(--skills-padding-bottom-max);
 
+  --projects-padding-top: var(--section-padding);
+  --projects-padding-bottom: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));
   --projects-gap: min(var(--projectsGapMin), var(--projectsGapMax));
   --project-features-gap: min(var(--projectFeaturesGapMin), var(--projectFeaturesGapMax));
   --project-bullet-size: max(var(--projectBulletSizeMin), var(--projectBulletSizeMax));
 
   --button-outline-offset: var(--gap-I);
 
-  --about-padding: min(var(--aboutPaddingAbs), var(--aboutPaddingRel));
+  --about-padding: var(--section-padding);
   --about-image-size: clamp(var(--aboutImageMin), var(--aboutImageIdeal), var(--aboutImageMax));
   --about-gap: min(var(--aboutImgMarginAbs), var(--aboutImgMarginRel));
   --about-text-gap: min(var(--aboutTextGapAbs), var(--aboutTextGapRel));
