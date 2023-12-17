@@ -144,6 +144,4 @@
   --about-image-size: clamp(var(--aboutImageMin), var(--aboutImageIdeal), var(--aboutImageMax));
   --about-gap: min(var(--aboutImgMarginAbs), var(--aboutImgMarginRel));
   --about-text-gap: min(var(--aboutTextGapAbs), var(--aboutTextGapRel));
-
-  --contact-links-gap: var(--project-features-gap);
-}
+  }

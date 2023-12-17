@@ -1,0 +1,89 @@
+body {
+  font-family: var(--body-text-font-family);
+  font-size: clamp(var(--textSizeMin), var(--textSizeIdeal), var(--textSizeMax));
+  font-weight: var(--fontWeightPrimary);
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1, h2, h3 {
+  font-weight: var(--fontWeightSecondary);
+}
+
+h1 {
+  font-family: var(--heading-font-family);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a, path, button {
+    transition: all 0.3s ease-out;
+  }
+}
+
+button {
+  padding: var(--buttonPadding);
+
+  font-family: var(--body-text-font-family);
+  font-size: var(--secondary-skill-font-size);
+  text-decoration: underline;
+  font-weight: var(--fontWeightPrimary);
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  border: var(--border-width) solid var(--border-color);
+  
+  cursor: pointer;
+}
+
+a:has(svg) {
+  display: inline-block;
+
+  width: var(--link-icon-size);
+  height: var(--link-icon-size);
+
+  cursor: pointer;
+}
+
+/* Temp fix for Firefox */
+header a, footer a {
+  display: inline-block;
+
+  width: var(--link-icon-size);
+  height: var(--link-icon-size);
+
+  cursor: pointer;
+}
+
+a svg {
+  width: var(--fullWidth);
+
+  stroke-width: var(--border-width);
+}
+
+header {
+  padding-block-end: var(--header-padding);
+}
+
+section:not(:first-of-type) > div:nth-child(1) {
+  position: relative;
+
+  font-size: clamp(var(--headingTwoFontMin), var(--headingTwoFontIdeal), var(--headingTwoFontMax));
+}
+
+section:not(:first-of-type) > div:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  left: var(--resetNumber);
+  bottom: var(--verticalCenteringBottom);
+  transform: var(--verticalCenteringTranslate);
+
+  width: var(--projectsHeadingFrameWidth);
+  height: var(--projectsHeadingFrameHeight);
+}
+
+section:not(:first-of-type) > div:nth-child(1) h2 {
+  font-family: var(--heading-font-family);
+  font-size: inherit;
+}

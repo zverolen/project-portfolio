@@ -1,0 +1,196 @@
+@media (prefers-color-scheme: light) {
+  @layer theme.light {
+    :root {
+      --site-text-color: var(--colorBlack);
+      --site-background-color: var(--colorWhite);
+      --skills-background-color: var(--colorGreyLight);
+      --accent-color: var(--colorPurple);
+      --text-link-color: var(--colorGreyDark);
+      --footer-background-color: var(--site-text-color);
+      --decorative-color-I: var(--colorRed);
+      --decorative-color-II: var(--colorBlue);
+    }
+
+    body {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color)
+    }
+
+    /* h1 span:nth-child(1), h1 span:nth-child(3) {
+      --text-color: var(--site-background-color);
+    }
+
+    h1 span:nth-child(1) {
+      --background-color: var(--decorative-color-I);
+    }
+
+    h1 span:nth-child(2) {
+      --text-color: var(--accent-color);
+    }
+
+    h1 span:nth-child(3) {
+      --background-color: var(--decorative-color-II);
+    } */
+
+    header svg {
+      --stroke-color: var(--accent-color);
+      --fill-color: transparent;
+    }
+
+    .skills {
+      --background-color: var(--skills-background-color);
+    }
+
+    .skills div:nth-child(1)::after {
+      --border-color: var(--accent-color);
+    }
+
+    .projects > div:nth-child(1) {
+      --background-color: var(--accent-color);
+      --text-color: var(--site-background-color);
+    }
+
+    .projects > div:nth-child(1)::after {
+      --border-color: var(--site-text-color);
+    }
+
+    .project {
+      --border-color: var(--site-text-color);
+    }
+
+    .project svg rect:nth-child(1) {
+      --fill-color: var(--decorative-color-I);
+      --stroke-color: var(--fill-color);
+    }
+
+    .project svg rect:nth-child(2) {
+      --fill-color: var(--decorative-color-II);
+      --stroke-color: var(--fill-color);
+    }
+
+    .project svg rect:nth-child(3) {
+      --fill-color: none;
+      --stroke-color: var(--site-text-color);
+    }
+
+    .project a {
+      --text-color: var(--text-link-color);
+      --background-color: var(--text-background-color);
+    }
+
+    button {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color);
+      --border-color: var(--site-text-color);
+    }
+
+    .about, footer {
+      --background-color: var(--site-text-color);
+      --text-color: var(--site-background-color);
+    }
+
+    footer path {
+      --stroke-color: var(--site-background-color);
+      --fill-color: var(--footer-background-color);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @layer theme.light {
+    :root {
+      --site-text-color: var(--colorBlack);
+      --site-background-color: var(--colorWhite);
+      --skills-background-color: var(--colorGreyLight);
+      --accent-color: var(--colorPurple);
+      --text-link-color: var(--colorGreyDark);
+      --footer-background-color: var(--site-text-color);
+      --decorative-color-I: var(--colorRed);
+      --decorative-color-II: var(--colorBlue);
+    }
+
+    body {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color)
+    }
+
+    /* h1 > span:nth-child(1), h1 > span:nth-child(3) {
+      --text-color: var(--site-background-color);
+    } */
+
+    /* h1 > span:nth-child(1) {
+      --background-color: var(--decorative-color-I);
+    }
+
+    h1 > span:nth-child(2) {
+      --text-color: var(--accent-color);
+    }
+
+    h1 > span:nth-child(3) {
+      --background-color: var(--decorative-color-II);
+    } */
+
+
+    header svg {
+      --stroke-color: var(--accent-color);
+      --fill-color: var(--site-background-color);
+    }
+
+    .skills {
+      --background-color: var(--skills-background-color);
+    }
+
+    .skills div:nth-child(1)::after {
+      --border-color: var(--accent-color);
+    }
+
+    .projects > div:nth-child(1) {
+      --background-color: var(--accent-color);
+      --text-color: var(--site-background-color);
+    }
+
+    .projects > div:nth-child(1)::after {
+      --border-color: var(--site-text-color);
+    }
+
+    .project {
+      --border-color: var(--site-text-color);
+    }
+
+    .project svg rect:nth-child(1) {
+      --fill-color: var(--decorative-color-I);
+      --stroke-color: var(--fill-color);
+    }
+
+    .project svg rect:nth-child(2) {
+      --fill-color: var(--decorative-color-II);
+      --stroke-color: var(--fill-color);
+    }
+
+    .project svg rect:nth-child(3) {
+      --fill-color: none;
+      --stroke-color: var(--site-text-color);
+    }
+
+    .project a {
+      --text-color: var(--text-link-color);
+      --background-color: var(--text-background-color);
+    }
+
+    button {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color);
+      --border-color: var(--site-text-color);
+    }
+
+    .about, footer {
+      --background-color: var(--site-text-color);
+      --text-color: var(--site-background-color);
+    }
+
+    footer path {
+      --stroke-color: var(--site-background-color);
+      --fill-color: var(--footer-background-color);
+    }
+  }
+}
