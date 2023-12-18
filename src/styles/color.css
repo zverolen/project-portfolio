@@ -4,11 +4,11 @@
       --site-text-color: var(--colorBlack);
       --site-background-color: var(--colorWhite);
       --skills-background-color: var(--colorGreyLight);
-      --accent-color: var(--colorPurple);
+      --accent-color: var(--colorPurpleDark);
       --text-link-color: var(--colorGreyDark);
       --footer-background-color: var(--site-text-color);
-      --decorative-color-I: var(--colorRed);
-      --decorative-color-II: var(--colorBlue);
+      --decorative-color-I: var(--colorRedLight);
+      --decorative-color-II: var(--colorBlueLight);
     }
 
     body {
@@ -16,21 +16,29 @@
       --background-color: var(--site-background-color)
     }
 
-    /* h1 span:nth-child(1), h1 span:nth-child(3) {
-      --text-color: var(--site-background-color);
-    }
-
-    h1 span:nth-child(1) {
+    h1 > span:nth-child(1)::after {
       --background-color: var(--decorative-color-I);
     }
 
-    h1 span:nth-child(2) {
+    h1 > span:nth-child(1) span {
+      --text-color: var(--site-background-color);
+    }
+
+    h1 > span:nth-child(2) span::after {
+      --border-color: var(--accent-color);
+    }
+
+    h1 > span:nth-child(2) span {
       --text-color: var(--accent-color);
     }
 
-    h1 span:nth-child(3) {
+    h1 > span:nth-child(3)::after {
       --background-color: var(--decorative-color-II);
-    } */
+    }
+
+    h1 > span:nth-child(3) span {
+      --text-color: var(--site-background-color);
+    }
 
     header svg {
       --stroke-color: var(--accent-color);
@@ -89,24 +97,35 @@
       --text-color: var(--site-background-color);
     }
 
+    .about > div:nth-child(1)::after {
+      --border-color: var(--site-background-color);
+    }
+
+    .about h2 {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color);
+    }
+
     footer path {
       --stroke-color: var(--site-background-color);
-      --fill-color: var(--footer-background-color);
+      --fill-color: transparent;
     }
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  @layer theme.light {
+  @layer theme.dark {
     :root {
-      --site-text-color: var(--colorBlack);
-      --site-background-color: var(--colorWhite);
-      --skills-background-color: var(--colorGreyLight);
-      --accent-color: var(--colorPurple);
-      --text-link-color: var(--colorGreyDark);
+      --site-text-color: var(--colorGreyLight);
+      --site-background-color: var(--colorPurpleDark);
+
+      --skills-background-color: var(--colorBlueDark);
+
+      --accent-color: var(--colorPurpleLight);
+      --text-link-color: var(--accent-color);
       --footer-background-color: var(--site-text-color);
-      --decorative-color-I: var(--colorRed);
-      --decorative-color-II: var(--colorBlue);
+      --decorative-color-I: var(--colorRedDark);
+      --decorative-color-II: var(--colorBlueDark);
     }
 
     body {
@@ -114,26 +133,33 @@
       --background-color: var(--site-background-color)
     }
 
-    /* h1 > span:nth-child(1), h1 > span:nth-child(3) {
-      --text-color: var(--site-background-color);
-    } */
-
-    /* h1 > span:nth-child(1) {
+    h1 > span:nth-child(1)::after {
       --background-color: var(--decorative-color-I);
     }
 
-    h1 > span:nth-child(2) {
+    h1 > span:nth-child(1) span {
+      --text-color: var(--site-text-color);
+    }
+
+    h1 > span:nth-child(2) span::after {
+      --border-color: var(--accent-color);
+    }
+
+    h1 > span:nth-child(2) span {
       --text-color: var(--accent-color);
     }
 
-    h1 > span:nth-child(3) {
+    h1 > span:nth-child(3)::after {
       --background-color: var(--decorative-color-II);
-    } */
+    }
 
+    h1 > span:nth-child(3) span {
+      --text-color: var(--site-text-color);
+    }
 
     header svg {
       --stroke-color: var(--accent-color);
-      --fill-color: var(--site-background-color);
+      --fill-color: transparent;
     }
 
     .skills {
@@ -158,12 +184,12 @@
     }
 
     .project svg rect:nth-child(1) {
-      --fill-color: var(--decorative-color-I);
+      --fill-color: var(--colorRedLight);
       --stroke-color: var(--fill-color);
     }
 
     .project svg rect:nth-child(2) {
-      --fill-color: var(--decorative-color-II);
+      --fill-color: var(--accent-color);
       --stroke-color: var(--fill-color);
     }
 
@@ -184,13 +210,22 @@
     }
 
     .about, footer {
-      --background-color: var(--site-text-color);
-      --text-color: var(--site-background-color);
+      --background-color: var(--decorative-color-I);
+      --text-color: var(--site-text-color);
+    }
+
+    .about > div:nth-child(1)::after {
+      --border-color: var(--site-text-color);
+    }
+
+    .about h2 {
+      --text-color: var(--site-text-color);
+      --background-color: var(---site-background-color);
     }
 
     footer path {
-      --stroke-color: var(--site-background-color);
-      --fill-color: var(--footer-background-color);
+      --stroke-color: var(--site-text-color);
+      --fill-color: transparent;
     }
   }
 }

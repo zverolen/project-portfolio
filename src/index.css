@@ -46,7 +46,13 @@
     outline-offset: var(--button-outline-offset);
   }
 
-  footer a:hover path, footer a:focus-visible path{
+  footer a:hover path, footer a:focus-visible path {
     --fill-color: var(--site-background-color);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    footer a:hover path, footer a:focus-visible path {
+      --fill-color: var(--site-text-color);
+    }
   }
 }

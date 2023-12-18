@@ -6,9 +6,12 @@
   --colorWhite: #FAFAFA;
   --colorGreyLight: #EEECEE;
   --colorGreyDark: #616161;
-  --colorPurple: #462255;
-  --colorRed: #D3715C;
-  --colorBlue: #639CA8;
+  --colorPurpleDark: #462255;
+  --colorPurpleLight: #D5C4FF;
+  --colorRedLight: #D3715C;
+  --colorBlueLight: #639CA8;
+  --colorRedDark: #85395F;
+  --colorBlueDark: #384F54;
 
   /* Typography | Primitive */
   --fontFamilyPrimary: Poppins;
