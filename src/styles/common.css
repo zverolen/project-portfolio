@@ -5,6 +5,8 @@ body {
 
   color: var(--text-color);
   background-color: var(--background-color);
+  letter-spacing: var(--bigger-letter-spacing);
+  word-spacing: var(--bigger-word-gap);
 }
 
 h1, h2, h3 {
@@ -19,6 +21,10 @@ h1 {
   a, path, button {
     transition: all 0.3s ease-out;
   }
+}
+
+p {
+  max-width: var(--optimal-reading-width);
 }
 
 button {
