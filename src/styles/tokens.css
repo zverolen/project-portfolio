@@ -1,7 +1,7 @@
 :root {
   /* Primitive Tokens */
 
-  /* Colors */
+  /* Colors | Primitive */
   --colorBlack: #424242;
   --colorWhite: #FAFAFA;
   --colorGreyLight: #EEECEE;
@@ -51,6 +51,7 @@
   /* Sizing | Primitive */
 
   --fullWidth: 100%;
+  --fullHeight: 100%;
   --resetMargin: 0;
   --resetNumber: 0;
 
@@ -69,6 +70,9 @@
 
   --frameBorderMin: 0.3571428571vw;
   --frameBorderMax: calc(2 / 16 * 1rem);
+
+  --header-name-width: 93.75vw;
+  --header-name-padding: 1.4444444444em;
 
   --linkIconMin: calc(50 / 16 * 1rem);
   --linkIconIdeal: 10.2vw;
@@ -113,6 +117,9 @@
 
   /* Layout | Primitive */
   --centering-margin: auto;
+
+  /* Layers | Primitive */
+  --layer-down-I: -1;
 
   /* Semantic tokens */
 

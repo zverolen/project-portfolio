@@ -7,12 +7,15 @@ h1 > span:nth-child(1) {
 
 h1 > span:nth-child(1)::after {
   content: "";
+
   position: absolute;
   top: 0;
-  z-index: -1;
-  width: 93.75vw;
-  height: 100%;
+  z-index: var(--layer-down-I);
+
+  width: var(--header-name-width);
+  height: var(--fullHeight);
   margin-right: auto;
+
   background-color: var(--background-color);
 }
 
@@ -22,7 +25,7 @@ h1 > span:nth-child(1) span {
   
   margin-inline: var(--centering-margin);
   width: var(--site-width); */
-  padding-top: 1.4444444444em;
+  padding-block-start: var(--header-name-padding);
 
   color: var(--text-color);
 }
@@ -36,6 +39,7 @@ h1 > span:nth-child(2) span::after {
   content: "";
   position: absolute;
   left: -0.21875em;
+  left: -14px;
   top: -0.15625em;
   display: block;
   width: 200%;
