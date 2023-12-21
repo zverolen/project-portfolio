@@ -1,6 +1,6 @@
 export const skills = {
   primary: ['HTML', 'Modern CSS', 'SASS', 'JS', 'React', 'Git', 'Accessibility', 'Responsive Images'],
-  secondary: ['UX/UI', 'Figma/Penpot', 'Intrinsic Web Design', 'Photoshop']
+  secondary: ['UX/UI', 'Figma/Penpot', 'Intrinsic Web Design', 'Photoshop', 'Inkscape']
 }
 
 export const projects = {
