@@ -9,10 +9,10 @@ h1 > span:nth-child(1)::after {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: var(--resetNumber);
   z-index: var(--layer-down-I);
 
-  width: var(--header-name-width);
+  width: var(--headerNameWidth);
   height: var(--fullHeight);
   margin-right: auto;
 
@@ -25,38 +25,40 @@ h1 > span:nth-child(1) span {
   
   margin-inline: var(--centering-margin);
   width: var(--site-width); */
-  padding-block-start: var(--header-name-padding);
+  padding-block-start: var(--headerNamePadding);
 
   color: var(--text-color);
 }
 
 h1 > span:nth-child(2) {
   display: block;
-  font-size: clamp(1.5rem, 7.1vw, 4rem);
+  font-size: var(--header-job-font-size);
 }
 
 h1 > span:nth-child(2) span::after {
   content: "";
   position: absolute;
-  left: -0.21875em;
-  left: -14px;
-  top: -0.15625em;
+  /* left: -0.21875em; */
+  left: var(--headerFrameLeft);
+  top: var(--headerFrameTop);
+
   display: block;
-  width: 200%;
-  height: 2.65625em;
-  border-width: min(0.3571428571vw, 0.125rem);
-  border-right-width: 0;
-  border-color: var(--border-color);
-  border-style: solid;
+  width: var(--headerFrameWidth);
+  height: var(--headerFrameHeight);
+  
+  border: var(--border-width) var(--border-color) solid;
+  border-right-width: var(--resetNumber);
 }
 
 h1 > span:nth-child(2) span {
+  position: relative;
+
   display: block;
   /* display: block;
   margin-left: auto;
   margin-right: auto;
   width: min(80rem, 100vw - 2rem); */
-  position: relative;
+  
   color: var(--text-color);
 }
 
@@ -67,15 +69,16 @@ h1 > span:nth-child(3) {
   /* margin-left: auto;
   margin-right: auto;
   width: min(80rem, 100vw - 2rem); */
-  font-size: clamp(1.5rem, 7.1vw, 4rem);
+  font-size: var(--header-job-font-size);
 }
 
 h1 > span:nth-child(3)::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 60px;
-  z-index: -1;
+  top: var(--resetNumber);
+  left: var(--headerJobBackgroundLeft);
+  z-index: var(--layer-down-I);
+
   width: 100vw;
   height: 100%;
   margin-left: auto;

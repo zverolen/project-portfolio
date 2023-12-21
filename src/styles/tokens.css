@@ -2,6 +2,7 @@
   /* Primitive Tokens */
 
   /* Colors | Primitive */
+
   --colorBlack: #424242;
   --colorWhite: #FAFAFA;
   --colorGreyLight: #EEECEE;
@@ -14,6 +15,7 @@
   --colorBlueDark: #384F54;
 
   /* Typography | Primitive */
+
   --fontFamilyPrimary: Poppins;
   --fontFamilySecondary: Forum;
   --fontFamilyPrimaryFallBack: Verdana;
@@ -71,8 +73,15 @@
   --frameBorderMin: 0.3571428571vw;
   --frameBorderMax: calc(2 / 16 * 1rem);
 
-  --header-name-width: 93.75vw;
-  --header-name-padding: 1.4444444444em;
+  --headerNameWidth: 93.75vw;
+  --headerNamePadding: 1.4444444444em;
+
+  --headerFrameLeft: calc(-6 / 16 * 1rem);
+  --headerFrameTop: -0.15625em;
+  --headerFrameHeight: 2.65625em;
+  --headerFrameWidth: 200%;
+
+  --headerJobBackgroundLeft: calc(60 / 16 * 1rem);
 
   --linkIconMin: calc(50 / 16 * 1rem);
   --linkIconIdeal: 10.2vw;
@@ -121,6 +130,7 @@
   /* Layers | Primitive */
   --layer-down-I: -1;
 
+
   /* Semantic tokens */
 
   /* Typography | Semantic*/
@@ -136,6 +146,7 @@
   --section-padding: min(var(--sectionPaddingAbs), var(--sectionPaddingRel));
 
   --header-padding: var(--about-gap);
+  --header-job-font-size: clamp(var(--headingTwoFontMin), var(--headingTwoFontIdeal), var(--headingTwoFontMax));
 
   --link-icon-size: clamp(var(--linkIconMin), var(--linkIconIdeal), var(--linkIconMax));
   --link-gap: var(--project-features-gap);
