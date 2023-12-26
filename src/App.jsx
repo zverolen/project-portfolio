@@ -10,8 +10,6 @@ import Skills from './components/skills/Skills'
 function App() {
   return (
     <>
-      {/* <img src={viteLogo} className="logo" alt="Vite logo" />
-      <img src={reactLogo} className="logo react" alt="React logo" /> */}
      <Header />
      <main>
         <Skills />

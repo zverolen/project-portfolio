@@ -18,7 +18,17 @@ export default function Project({
           <h3>{project.name}</h3>
           <div>
             <img 
-              src={`./../../images/${project.imageToken}.png`}
+              src={`./images/${project.imageToken}-501.png`}
+              sizes="85vw"
+              srcSet={`./images/${project.imageToken}-226.png 226w,
+                      ./images/${project.imageToken}-501.png 501w,
+                      ./images/${project.imageToken}-698.png 698w,
+                      ./images/${project.imageToken}-857.png 857w,
+                      ./images/${project.imageToken}-1143.png 1143w,
+                      ./images/${project.imageToken}-1292.png 1292w,
+                      ./images/${project.imageToken}-1593.png 1593w,
+                      ./images/${project.imageToken}-1861.png 1861w,
+                      ./images/${project.imageToken}-2430.png 2430w`}
               alt={`A computer and a smartphone with views of the project ${project.name}`}
             />
             <div>
