@@ -65,7 +65,8 @@ header a, footer a {
 a svg {
   width: var(--fullWidth);
 
-  stroke-width: var(--border-width);
+  /* stroke-width: var(--border-width); */
+  stroke-width: var(--svgStrokeWidth);
 }
 
 header {

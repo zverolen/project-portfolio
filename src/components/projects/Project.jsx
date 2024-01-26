@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import Disclosure from '../disclosure/Disclosure';
+import Button from '../button/Button';
 
 const svg = <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.541016" y="7.79956" width="14.0002" height="15.0146"></rect>
@@ -12,10 +13,9 @@ export default function Project({
  }) {
   return(
     <li className="project" key={project.id}>
-
-      <Disclosure>
-        <div aria-live="polite">
-          <h3>{project.name}</h3>
+      <Disclosure projectName={project.name}>
+        {/* <div aria-live="polite">
+          <h3>{project.name}</h3> */}
           <div>
             <img 
               src={`./images/${project.imageToken}-501.png`}
@@ -46,7 +46,7 @@ export default function Project({
               <a href={project.linkGithubHref}>{project.linkGithubText}</a>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </Disclosure>
       
     </li>

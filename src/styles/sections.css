@@ -118,6 +118,10 @@ header svg {
   fill: var(--fill-color);
 }
 
+/* header svg path {
+  stroke-width: 1px;
+} */
+
 .skills {
   position: relative;
 
@@ -242,13 +246,28 @@ header svg {
   border: var(--border-width) var(--border-color) solid;
 }
 
-.project > div {
+/* .project > div {
   display: flex;
   flex-direction: column;
   row-gap: var(--projects-gap);
+} */
+
+.project > div:nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  width: 100%;
 }
 
-.project h3 + div {
+/* .project > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--projects-gap);
+} */
+
+.project > div:nth-child(2) > div {
   display: flex;
   flex-direction: column;
   row-gap: var(--projects-gap);
@@ -262,11 +281,18 @@ header svg {
   margin-block-end: var(--gap-II);
 }
 
-.project h3 + div > div, .project ul {
+/* .project h3 + div > div, .project ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--project-features-gap);
+} */
+
+.project > div:nth-child(2) > div > div, .project ul {
   display: flex;
   flex-direction: column;
   row-gap: var(--project-features-gap);
 }
+
 
 .project li {
   display: flex;

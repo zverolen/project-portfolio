@@ -9,6 +9,23 @@ export const projects = {
   projects: [
     {
       id: 1,
+      name: 'Знаю! (I know!)',
+      imageToken: 'business-site-demo',
+      description: 'A website to showcase my project. Most accurately demonstrates my skills and my approach. The design goal was to provide the viewer with content in the least time-consuming way. The development goal was to get as close to the single source of truth concept as possible.',
+      features: [
+        'HTML, SASS and JS',
+        'Doesn\'t use breakpoints',
+        'Designed in Figma using design tokens',
+        'Images created in Photoshop',
+        'Social icons taken from the Figma community resources'
+      ],
+      linkGithubText: 'Go to the portfolio repository on Github',
+      linkGithubHref: '',
+      linkBrowserText: 'Open the Night Flight site in browser',
+      linkBrowserHref: ''
+    },
+    {
+      id: 2,
       name: 'My Portfolio Website',
       imageToken: 'business-site-demo',
       description: 'A website to showcase my project. Most accurately demonstrates my skills and my approach. The design goal was to provide the viewer with content in the least time-consuming way. The development goal was to get as close to the single source of truth concept as possible.',
@@ -25,7 +42,7 @@ export const projects = {
       linkBrowserHref: ''
     },
     {
-      id: 2,
+      id: 3,
       name: 'Local vampire club',
       imageToken: 'business-site-demo',
       description: 'This is a website for Night Flight - a local club for Sydney vampires who turn into bats and fly together. It was developed as a task on Codecademy. The goal was to create a responsive website for a local club of a choice. No fixed values should be used. I also included a small widget that imitates the form submision.',
@@ -40,7 +57,7 @@ export const projects = {
       linkBrowserHref: ''
     },
     {
-      id: 3,
+      id: 4,
       name: 'Non-alco beer brewery',
       imageToken: 'business-site-demo',
       description: 'A website for a non-alco craft beer brewery O2. It was also a part of a course on Codecademy. The task was to create a responsive website for a company using Flexbox.',

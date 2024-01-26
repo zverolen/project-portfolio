@@ -3,21 +3,22 @@ export default function Header() {
     <header>
       <h1>
         <span>
-          <span className="site-frame" role="presentation">
+          <span className="site-frame">
             Lena Zvereva 
           </span>
         </span>
         <span>
-          <span className="site-frame" role="presentation">
+          <span className="site-frame">
               Front-End 
           </span>
         </span>
         <span className="site-frame">
-          <span role="presentation">
+          <span>
               Web Developer
           </span>
         </span>
       </h1>
+      
       <div className="site-frame">
         <a href="www.linkedin.com/in/lena-zvereva-722b3177">
             <svg viewBox="0 0 92 92">

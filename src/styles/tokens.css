@@ -72,6 +72,7 @@
 
   --frameBorderMin: 0.3571428571vw;
   --frameBorderMax: calc(2 / 16 * 1rem);
+  --svgStrokeWidth: var(--frameBorderMax);
 
   --headerNameWidth: 93.75vw;
   --headerNamePadding: 1.4444444444em;
@@ -101,7 +102,7 @@
   --projectsNoteMarginMax: 7.1vw;
 
   --projectsGapMin: var(--gap-IV);
-  --projectsGapMax: 3.56vw;
+  --projectsGapMax: 3.5555555556vw;
 
   --projectFeaturesGapMin: var(--gap-II);
   --projectFeaturesGapMax: 1.78vw;
