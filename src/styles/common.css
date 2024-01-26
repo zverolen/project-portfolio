@@ -71,6 +71,8 @@ a svg {
 
 header {
   padding-block-end: var(--header-padding);
+
+  overflow: hidden;
 }
 
 section:not(:first-of-type) > div:nth-child(1) {

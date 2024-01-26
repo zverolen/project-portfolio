@@ -317,7 +317,7 @@ header svg {
 }
 
 .project a {
-  font-weight: var(--fontWeightAlternative);
+  font-weight: var(--fontWeightSecondary);
   color: var(--text-color);
   background-color: var(--background-color);
 }

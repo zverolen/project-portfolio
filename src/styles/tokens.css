@@ -23,7 +23,6 @@
 
   --fontWeightPrimary: 300;
   --fontWeightSecondary: 500;
-  --fontWeightAlternative: 600;
 
   --textSizeMin: 1rem;
   --textSizeIdeal: 2.6vw;
@@ -82,7 +81,7 @@
   --headerFrameHeight: 2.65625em;
   --headerFrameWidth: 200%;
 
-  --headerJobBackgroundLeft: calc(60 / 16 * 1rem);
+  --headerJobBackgroundLeft: calc(48 / 16 * 1rem);
 
   --linkIconMin: calc(50 / 16 * 1rem);
   --linkIconIdeal: 10.2vw;
@@ -92,13 +91,13 @@
   --skillsHeadingWidth: 12.1739130435em;
   --skillsHeadingFrameHeight: 2.1304347826em;
   --skillsHorizontalGap: calc(32 / 16 * 1rem);
-  --skillsVerticalGap: calc(24 / 16 * 1rem);
+  --skillsVerticalGap: var(--gap-III);
 
   --projectsHeadingFrameWidth: 48.4126984127vw;
   --projectsHeadingFrameHeight: 1.75em;
 
   --projectsNoteMarginTopMin: calc(76 / 16 * 1rem);
-  --projectsNoteMarginBottomMin: calc(64 / 16 * 1rem);
+  --projectsNoteMarginBottomMin: var(--gap-VI);
   --projectsNoteMarginMax: 7.1vw;
 
   --projectsGapMin: var(--gap-IV);
@@ -142,7 +141,7 @@
   --subheading-font-size: clamp(var(--projectsSubheadingFontMin), var(--projectsSubheadingFontIdeal), var(--projectsSubheadingFontMax));
 
   /* Sizing */
-  --site-width: min(var(--siteWidthMin), 100vw - 2rem);
+  --site-width: min(var(--siteWidthMin), 100vw - 3rem);
   --border-width: min(var(--frameBorderMin), var(--frameBorderMax));
   --section-padding: min(var(--sectionPaddingAbs), var(--sectionPaddingRel));
 

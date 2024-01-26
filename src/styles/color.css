@@ -83,7 +83,7 @@
 
     .project a {
       --text-color: var(--text-link-color);
-      --background-color: var(--text-background-color);
+      --background-color: var(--site-background-color);
     }
 
     button {
@@ -200,7 +200,7 @@
 
     .project a {
       --text-color: var(--text-link-color);
-      --background-color: var(--text-background-color);
+      --background-color: var(--site-background-color);
     }
 
     button {

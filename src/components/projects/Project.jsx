@@ -32,11 +32,11 @@ export default function Project({
               alt={`A computer and a smartphone with views of the project ${project.name}`}
             />
             <div>
-              <h4>Description</h4>
+              <h4 aria-label={`Description of the ${project.name} project`}>Description</h4>
               <p>{project.description}</p>
             </div>
             <div>
-              <h4>Features</h4>
+              <h4 aria-label={`Features of the ${project.name} project`}>Features</h4>
               <ul>
                 {project.features.map((feature, index) => <li key={index}><span>{svg}</span><span>{feature}</span></li>)}
               </ul>
