@@ -5,7 +5,7 @@ export const skills = {
 
 export const projects = {
   heading: 'Projects',
-  note: 'NOTE: All websites are tested using screen readers and against WCAG 2.2 creteria; they are operable by keyboard and are usable regardless screen size and orientation, and the color contrast ratio is at least at the level AA. Some images and all copy created by me. Almost all projects use light and dark color themes. Created using Vite.',
+  note: 'NOTE: All websites are tested with screen readers and are evaluated against WCAG 2.2 criteria. They are operable via keyboard and designed to be usable across various screen sizes and orientations. The color contrast ratio meets or exceeds the AA level requirements. Some images and all copy created by me. All sites have light and dark color themes (except for the Night Flight site with colors appropriate for both themes). Created using Vite.',
   projects: [
     {
       id: 1,
@@ -78,9 +78,9 @@ export const projects = {
 
 export const about = {
   heading: 'About me',
-  p1: "Hello! I'm a self-taught frontend web developer based in Barcelona, Spain. I primarily work with CSS and HTML with Vanilla Javascript to provide user interactions. I'm also familiar with UX/UI design and consider it to be my hobby.",
-  p2: "My main priority is accessibility. I also pay a lot of attention to responsive images and other ways to make my websites works on any devices. My technical approach includes creating levels of abstraction with SASS and using modern CSS techniques.",
-  p3: "My work is best described with the projects in my portfolio."
+  p1: "Hello! I am a self-taught frontend web developer based in Belgrade, Serbia, specializing in CSS, HTML, and React. I also use Cypress for component and end-to-end testing. In addition to these technical skills, I'm interested in UX/UI design, which I pursue as a hobby.",
+  p2: "Accessibility is my top priority, and I put a lot of effort into making my websites fully responsive, including responsive images, to guarantee reliable work across various devices.  I'm a believer in intrinsic design and a big fan of modern CSSand I am trying to include such techniques in my projects as much as possible.",
+  p3: "My skills and approach are best represented by the projects in my portfolio."
 }
 
 export const contact = {
