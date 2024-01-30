@@ -141,7 +141,8 @@ header svg {
   flex-direction: column;
   justify-content: center;
   
-  width: var(--skillsHeadingWidth);
+  width: min(var(--skillsHeadingWidth), 100vw - 1rem);
+  /* width: var(--skillsHeadingWidth); */
   margin-inline: var(--centering-margin);
   font-size: clamp(var(--skillsHeadingFontMin), var(--skillsHeadingFontIdeal), var(--skillsHeadingFontMax));
 }
@@ -150,7 +151,8 @@ header svg {
   content: "";
   position: absolute;
   height: var(--skillsHeadingFrameHeight);
-  width: var(--fullWidth);
+  /* width: var(--fullWidth); */
+  width: min(100%, 100vw);
   border: var(--border-width) var(--border-color) solid;
 }
 
@@ -256,7 +258,7 @@ header svg {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 
   width: 100%;
 }

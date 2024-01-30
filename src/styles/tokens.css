@@ -24,7 +24,8 @@
   --fontWeightPrimary: 300;
   --fontWeightSecondary: 500;
 
-  --textSizeMin: 1rem;
+  --textSizeMin: calc(20 / 16 * 1rem);
+  /* --textSizeMin: 1rem; */
   --textSizeIdeal: 2.6vw;
   --textSizeMax: calc(24 / 16 * 1rem);
 
@@ -32,22 +33,30 @@
   --headingTwoFontIdeal: 7.1vw;
   --headingTwoFontMax: calc(64 / 16 * 1rem);
 
-  --skillsHeadingFontMin: 1rem;
+  --skillsHeadingFontMin: calc(22 / 16 * 1rem);
+  /* --skillsHeadingFontMin: calc(24 / 16 * 1rem); */
+  /* --skillsHeadingFontMin: 1rem; */
   --skillsHeadingFontIdeal: 5.1vw;
   --skillsHeadingFontMax: calc(46 / 16 * 1rem);
 
-  --skillPrimaryFontMin: calc(18 / 16 * 1rem);
+  /* --skillPrimaryFontMin: calc(18 / 16 * 1rem); */
+  --skillPrimaryFontMin: calc(24 / 16 * 1rem);
   --skillPrimaryFontIdeal: 4.4444444444vw;
   --skillPrimaryFontMax: calc(40 / 16 * 1rem);
-  --skillSecondaryFontMin: 1rem;
+  /* --skillSecondaryFontMin: 1rem; */
+  --skillSecondaryFontMin: calc(20 / 16 * 1rem);
   --skillSecondaryFontIdeal: 3.1vw;
   --skillSecondaryFontMax: calc(28 / 16 * 1rem);
 
   --skillsTextTransform: uppercase;
 
-  --projectsSubheadingFontMin: 1rem;
+  --projectsSubheadingFontMin: calc(20 / 16 * 1rem);
+  /* --projectsSubheadingFontMin: 1rem; */
   --projectsSubheadingFontIdeal: 3.6vw;
   --projectsSubheadingFontMax: calc(32 / 16 * 1rem);
+  --buttonFontMin: var(--projectsSubheadingFontMin);
+  --buttonFontIdeal: var(--projectsSubheadingFontIdeal);
+  --buttonFontMax: calc(28 / 16 * 1rem);
 
   /* Sizing | Primitive */
 
@@ -89,7 +98,8 @@
 
   --skillsGapMaxValue: 7.1111111111vw;
   --skillsHeadingWidth: 12.1739130435em;
-  --skillsHeadingFrameHeight: 2.1304347826em;
+  --skillsHeadingFrameHeight: 2.34782608em;
+  /* --skillsHeadingFrameHeight: 2.1304347826em; */
   --skillsHorizontalGap: calc(32 / 16 * 1rem);
   --skillsVerticalGap: var(--gap-III);
 
@@ -139,6 +149,7 @@
 
   --secondary-skill-font-size: clamp(var(--skillSecondaryFontMin), var(--skillSecondaryFontIdeal), var(--skillSecondaryFontMax));
   --subheading-font-size: clamp(var(--projectsSubheadingFontMin), var(--projectsSubheadingFontIdeal), var(--projectsSubheadingFontMax));
+  --button-font-size: clamp(var(--buttonFontMin), var(--buttonFontIdeal), var(--buttonFontMax));
 
   /* Sizing */
   --site-width: min(var(--siteWidthMin), 100vw - 3rem);

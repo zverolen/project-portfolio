@@ -31,7 +31,8 @@ button {
   padding: var(--buttonPadding);
 
   font-family: var(--body-text-font-family);
-  font-size: var(--secondary-skill-font-size);
+  /* font-size: var(--secondary-skill-font-size); */
+  font-size: var(--button-font-size);
   text-decoration: underline;
   font-weight: var(--fontWeightPrimary);
 
