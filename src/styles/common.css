@@ -27,6 +27,10 @@ p {
   max-width: var(--optimal-reading-width);
 }
 
+p, li {
+  line-height: var(--lineHeightBigger);
+}
+
 button {
   padding: var(--buttonPadding);
 

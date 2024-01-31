@@ -29,8 +29,15 @@
   --textSizeIdeal: 2.6vw;
   --textSizeMax: calc(24 / 16 * 1rem);
 
+  --headingOneFontMin: calc(32 / 16 * 1rem);
+  --headingOneFontIdeal: 10.6vw;
+  /* --headingOneFontIdeal: 10vw; */
+  --headingOneFontMax: calc(90 / 16 * 1rem);
+
+  /* --headingTwoFontMin: calc(32 / 16 * 1rem); */
   --headingTwoFontMin: calc(24 / 16 * 1rem);
-  --headingTwoFontIdeal: 7.1vw;
+  --headingTwoFontIdeal: 7.6vw;
+  /* --headingTwoFontIdeal: 7.1vw; */
   --headingTwoFontMax: calc(64 / 16 * 1rem);
 
   --skillsHeadingFontMin: calc(22 / 16 * 1rem);
@@ -50,13 +57,15 @@
 
   --skillsTextTransform: uppercase;
 
-  --projectsSubheadingFontMin: calc(20 / 16 * 1rem);
+  --projectsSubheadingFontMin: calc(18 / 16 * 1rem);
   /* --projectsSubheadingFontMin: 1rem; */
   --projectsSubheadingFontIdeal: 3.6vw;
   --projectsSubheadingFontMax: calc(32 / 16 * 1rem);
   --buttonFontMin: var(--projectsSubheadingFontMin);
   --buttonFontIdeal: var(--projectsSubheadingFontIdeal);
   --buttonFontMax: calc(28 / 16 * 1rem);
+
+  --lineHeightBigger: 1.8;
 
   /* Sizing | Primitive */
 
@@ -78,14 +87,16 @@
   --gap-V: calc(48 / 16 * 1rem);
   --gap-VI: calc(64 / 16 * 1rem);
 
-  --frameBorderMin: 0.3571428571vw;
-  --frameBorderMax: calc(2 / 16 * 1rem);
-  --svgStrokeWidth: var(--frameBorderMax);
+  --frameBorderRel: 0.36vw;
+  /* --frameBorderRel: 0.3571428571vw; */
+  --frameBorderAbs: calc(2 / 16 * 1rem);
+  --svgStrokeWidth: var(--frameBorderAbs);
 
   --headerNameWidth: 93.75vw;
   --headerNamePadding: 1.4444444444em;
 
-  --headerFrameLeft: calc(-6 / 16 * 1rem);
+  /* --headerFrameLeft: calc(-6 / 16 * 1rem); */
+  --headerFrameLeft: calc(-12 / 16 * 1rem);
   --headerFrameTop: -0.15625em;
   --headerFrameHeight: 2.65625em;
   --headerFrameWidth: 200%;
@@ -110,14 +121,16 @@
   --projectsNoteMarginBottomMin: var(--gap-VI);
   --projectsNoteMarginMax: 7.1vw;
 
-  --projectsGapMin: var(--gap-IV);
-  --projectsGapMax: 3.5555555556vw;
+  --projectsGapAbs: var(--gap-IV);
+  --projectsGapRel: 3.5555555556vw;
 
-  --projectFeaturesGapMin: var(--gap-II);
-  --projectFeaturesGapMax: 1.78vw;
+  --projectHeadingTop: calc(6 / 16 * 1rem);
 
-  --projectBulletSizeMin: calc(12 / 16 * 1rem);
-  --projectBulletSizeMax: 1.3vw;
+  --projectFeaturesGapAbs: var(--gap-II);
+  --projectFeaturesGapRel: 1.78vw;
+
+  --projectBulletSizeAbs: calc(12 / 16 * 1rem);
+  --projectBulletSizeRel: 1.3vw;
 
   --buttonPadding: 0.2857142857em;
 
@@ -153,10 +166,11 @@
 
   /* Sizing */
   --site-width: min(var(--siteWidthMin), 100vw - 3rem);
-  --border-width: min(var(--frameBorderMin), var(--frameBorderMax));
+  --border-width: min(var(--frameBorderRel), var(--frameBorderAbs));
   --section-padding: min(var(--sectionPaddingAbs), var(--sectionPaddingRel));
 
   --header-padding: var(--about-gap);
+  --header-name-font-size: clamp(var(--headingOneFontMin), var(--headingOneFontIdeal), var(--headingOneFontMax));
   --header-job-font-size: clamp(var(--headingTwoFontMin), var(--headingTwoFontIdeal), var(--headingTwoFontMax));
 
   --link-icon-size: clamp(var(--linkIconMin), var(--linkIconIdeal), var(--linkIconMax));
@@ -169,9 +183,9 @@
 
   --projects-padding-top: var(--section-padding);
   --projects-padding-bottom: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));
-  --projects-gap: min(var(--projectsGapMin), var(--projectsGapMax));
-  --project-features-gap: min(var(--projectFeaturesGapMin), var(--projectFeaturesGapMax));
-  --project-bullet-size: max(var(--projectBulletSizeMin), var(--projectBulletSizeMax));
+  --projects-gap: min(var(--projectsGapAbs), var(--projectsGapRel));
+  --project-features-gap: min(var(--projectFeaturesGapAbs), var(--projectFeaturesGapRel));
+  --project-bullet-size: max(var(--projectBulletSizeAbs), var(--projectBulletSizeRel));
 
   --button-outline-offset: var(--gap-I);
 
