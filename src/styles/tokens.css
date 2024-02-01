@@ -149,6 +149,7 @@
 
   /* Layout | Primitive */
   --centering-margin: auto;
+  --circle-border-radius: 50%;
 
   /* Layers | Primitive */
   --layer-down-I: -1;

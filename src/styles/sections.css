@@ -378,6 +378,7 @@ header svg {
   margin-inline: var(--centering-margin);
   margin-block-end: var(--about-gap);
   /* margin-block-end: min(4rem, 7.1111111111vw); */
+  border-radius: var(--circle-border-radius);
 }
 
 .about p:not(p:last-of-type) {
