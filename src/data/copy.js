@@ -10,7 +10,7 @@ export const projects = {
     {
       id: 1,
       name: 'Learning app',
-      imageToken: 'business-site-demo',
+      imageToken: 'vocab',
       description: 'A React app that helps to study Serbian language. It allows to practice translating phrases from Russian into Serbian and to check the result. Currently the project is at the early stage and is waiting for the redesign and adding more sophisticated functionality.',
       features: [
         'Uses two langauges: Russian and Serbian',
@@ -28,7 +28,7 @@ export const projects = {
     {
       id: 2,
       name: 'My Portfolio Website',
-      imageToken: 'business-site-demo',
+      imageToken: 'portfolio',
       description: 'A website to showcase my projects. Most accurately demonstrates my skills and my approach. The design goal was to provide the viewer with content in the least time-consuming way. The development goal was to create a modern website using some React for an interactive component.',
       features: [
         'HTML, CSS and JS (React)',
@@ -45,7 +45,7 @@ export const projects = {
     {
       id: 4,
       name: 'Non-alco beer brewery',
-      imageToken: 'business-site-demo',
+      imageToken: 'o2',
       description: 'A website for a non-alcoholic craft beer brewery O2. It was created as a part of a Codecademy course project. The assignment was to make a responsive website for a company using Flexbox.',
       features: [
         'HTML and CSS',
@@ -60,7 +60,7 @@ export const projects = {
     {
       id: 3,
       name: 'Local vampire club',
-      imageToken: 'business-site-demo',
+      imageToken: 'flight',
       description: 'This is a website for Night Flight - a local club for Sydney vampires who turn into bats and fly together. It was developed as a project for a Codecademy course. The assignment was to create a responsive website for a local club, utilizing flexible design principles without fixed values. The site features a simulated form submission widget (React).',
       features: [
         'HTML, SASS and JS',

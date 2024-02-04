@@ -17,7 +17,7 @@ export default function Project({
         {/* <div aria-live="polite">
           <h3>{project.name}</h3> */}
           <div>
-            <img 
+            {/* <img 
               src={`./images/${project.imageToken}-501.png`}
               sizes="85vw"
               srcSet={`./images/${project.imageToken}-226.png 226w,
@@ -29,6 +29,35 @@ export default function Project({
                       ./images/${project.imageToken}-1593.png 1593w,
                       ./images/${project.imageToken}-1861.png 1861w,
                       ./images/${project.imageToken}-2430.png 2430w`}
+              alt={`A computer and a smartphone with views of the project ${project.name}`}
+            /> */}
+            <img 
+              src={`./images/flight-mock-210.png`}
+              sizes="(min-width: 1426px) 1212px,
+                     (min-width: 1300px) 1182px,
+                     (min-width: 1100px) 984px,
+                     (min-width: 900px) 784px,
+                     (min-width: 600px) 505px,
+                     (min-width: 500px) 414px,
+                     (min-width: 414px) 335px,
+                     (min-width: 375px) 298px,
+                     280px"
+              srcSet={`./images/${project.imageToken}-mock-210.png 210w,
+                      ./images/${project.imageToken}-mock-298.png 298w,
+                      ./images/${project.imageToken}-mock-335.png 335w,
+                      ./images/${project.imageToken}-mock-420.png 420w,
+                      ./images/${project.imageToken}-mock-505.png 505w,
+                      ./images/${project.imageToken}-mock-596.png 596w,
+                      ./images/${project.imageToken}-mock-670.png 670w,
+                      ./images/${project.imageToken}-mock-784.png 784w,
+                      ./images/${project.imageToken}-mock-984.png 984w,
+                      ./images/${project.imageToken}-mock-1010.png 1010w,
+                      ./images/${project.imageToken}-mock-1182.png 1182w,
+                      ./images/${project.imageToken}-mock-1212.png 1212w,
+                      ./images/${project.imageToken}-mock-1568.png 1568w,
+                      ./images/${project.imageToken}-mock-1968.png 1968w,
+                      ./images/${project.imageToken}-mock-2364.png 2364w,
+                      ./images/${project.imageToken}-mock-2424.png 2430w`}
               alt={`A computer and a smartphone with views of the project ${project.name}`}
             />
             <div>
