@@ -9,9 +9,9 @@ export default function About() {
       <div className="site-frame">
         <img 
           src="./../../images/portrait-100.jpg"
-          sizes="(min-width: 1000px) 200px,
-                 (min-width: 501px) 20vw,
-                 100px"
+          sizes="(min-width: calc(1000 / 16 * 1rem)) 12.5rem,
+                 (min-width: calc(501 / 16 * 1rem)) 20vw,
+                 6.25rem"
           srcSet="./../../images/portrait-100.jpg 100w,
                   ./../../images/portrait-160.jpg 160w,
                   ./../../images/portrait-240.jpg 240w,

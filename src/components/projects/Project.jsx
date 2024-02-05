@@ -17,31 +17,17 @@ export default function Project({
         {/* <div aria-live="polite">
           <h3>{project.name}</h3> */}
           <div>
-            {/* <img 
-              src={`./images/${project.imageToken}-501.png`}
-              sizes="85vw"
-              srcSet={`./images/${project.imageToken}-226.png 226w,
-                      ./images/${project.imageToken}-501.png 501w,
-                      ./images/${project.imageToken}-698.png 698w,
-                      ./images/${project.imageToken}-857.png 857w,
-                      ./images/${project.imageToken}-1143.png 1143w,
-                      ./images/${project.imageToken}-1292.png 1292w,
-                      ./images/${project.imageToken}-1593.png 1593w,
-                      ./images/${project.imageToken}-1861.png 1861w,
-                      ./images/${project.imageToken}-2430.png 2430w`}
-              alt={`A computer and a smartphone with views of the project ${project.name}`}
-            /> */}
             <img 
               src={`./images/flight-mock-210.png`}
-              sizes="(min-width: 1426px) 1212px,
-                     (min-width: 1300px) 1182px,
-                     (min-width: 1100px) 984px,
-                     (min-width: 900px) 784px,
-                     (min-width: 600px) 505px,
-                     (min-width: 500px) 414px,
-                     (min-width: 414px) 335px,
-                     (min-width: 375px) 298px,
-                     280px"
+              sizes="(min-width: calc(1462 / 16 * 1rem)) 75.75rem,
+                     (min-width: calc(1300 / 16 * 1rem)) 73.875rem,
+                     (min-width: calc(1100 / 16 * 1rem)) 61.5rem,
+                     (min-width: calc(900 / 16 * 1rem)) 49rem,
+                     (min-width: calc(600 / 16 * 1rem)) 31.5625rem,
+                     (min-width: calc(500 / 16 * 1rem)) 25.875rem,
+                     (min-width: calc(335 / 16 * 1rem)) 20.9375rem,
+                     (min-width: calc(298 / 16 * 1rem)) 18.625rem,
+                     17.5rem"
               srcSet={`./images/${project.imageToken}-mock-210.png 210w,
                       ./images/${project.imageToken}-mock-298.png 298w,
                       ./images/${project.imageToken}-mock-335.png 335w,
