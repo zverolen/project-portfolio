@@ -1,8 +1,106 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# My Portfolio Website
 
-Currently, two official plugins are available:
+*Student Project on Codecademy (a portfolio site for oneself)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+My personal website with a few projects.
+
+## Characteristics.
+
+1. Built with Vite.
+2. Uses React for a disclosure component.
+3. Has light and dark theme.
+4. Uses responsive images.
+5. Designed in Figma.
+6. Images created in Figma and Adobe Photoshop. 
+7. Checked against the WCAG 2.2 criteria (the audit is at the end of this page).
+
+## Compliance with the WCAG 2.2 success criteria:
+
+- [x] 1.1.1 Non-text Content (A)
+- [x] 1.2.1 Audio-only and Video-only (Prerecorded) (A) (not present)
+- [x] 1.2.2 Captions (Prerecorded) (A) (not present)
+- [x] 1.2.3 Audio Description or Media Alternative (Prerecorded) (A) (not present)
+- [x] 1.2.4 Captions (Live) (AA) (not present)
+- [x] 1.2.5 Audio Description (Prerecorded) (AA) (not present)
+- [x] 1.2.6 Sign Language (Prerecorded) (AAA) (not present)
+- [x] 1.2.7 Extended Audio Description (Prerecorded) (AAA) (not present)
+- [x] 1.2.8 Media Alternative (Prerecorded) (AAA) (not present)
+- [x] 1.2.9 Audio-only (Prerecorded) (AAA) (not present)
+
+- [x] 1.3.1 Info and Relationships (A)
+- [x] 1.3.2 Meaningful Sequence (A)
+- [ ] 1.3.3 Sensory Characteristics (A)
+- [ ] 1.3.4 Orientation (AA)
+- [ ] 1.3.5 Identify Input Purpose (AA) (not present)
+- [ ] 1.3.6 Identify Purpose (AAA)
+- [ ] 1.4.1 Use of Color (A)
+- [ ] 1.4.2 Audio Control  (A) (not present)
+- [ ] 1.4.3 Contrast (Minimum) (AA)
+- [ ] 1.4.4 Resize Text (AA)
+- [ ] 1.4.5 Images of Text (AA)
+- [ ] 1.4.6 Contrast (Enhanced) (AAA)
+- [ ] 1.4.7 Low or No Background Audio (AAA) (not present)
+- [ ] 1.4.8 Visual Presentation (AAA) (Color tested in Firefox, everything else verified too)
+- [ ] 1.4.9 Images of Text (No Exception) (AAA)
+- [ ] 1.4.10 Reflow (AA)
+- [ ] 1.4.11 Non-text Contrast (AA)
+- [ ] 1.4.12 Text Spacing (AA) (The default word spacing is used because increasing it makes the text lines fall apart: there are a lot of short lines and no long lines of text)
+- [ ] 1.4.13 Content on Hover or Focus (AA) (not present)
+- [ ] 2.1.1 Keyboard (A)
+- [ ] 2.1.2 No Keyboard Trap (A)
+- [ ] 2.1.3 Keyboard (No Exception) (AAA)
+- [ ] 2.1.4 Character Key Shortcuts (A) (not present)
+- [ ] 2.2.1 Timing Adjustable (A) (not present)
+- [ ] 2.2.2 Pause, Stop, Hide (A)
+- [ ] 2.2.3 No Timing (AAA) (not present)
+- [ ] 2.2.4 Interruptions (AAA) (not present)
+- [ ] 2.2.5 Re-authenticating (AAA) (not present)
+- [ ] 2.2.6 Timeouts (AAA) (not present)
+- [ ] 2.3.1 Three Flashes or Below Threshold (A)
+- [ ] 2.3.2 Three Flashes (AAA)
+- [ ] 2.3.3 Animation from Interactions (AAA)
+- [ ] 2.4.1 Bypass Blocks (A)
+- [ ] 2.4.2 Page Titled (A)
+- [ ] 2.4.3 Focus Order (A)
+- [ ] 2.4.4 Link Purpose (In Context) (A)
+- [ ] 2.4.5 Multiple Ways (AA) (not present)
+- [ ] 2.4.6 Headings and Labels (AA)
+- [ ] 2.4.7 Focus Visible (AA)
+- [ ] 2.4.8 Location (AAA) (not present)
+- [ ] 2.4.9 Link Purpose (Link Only) (AAA)
+- [ ] 2.4.10 Section Headings (AAA) (The first section doesn’t have a heading (only image); the second section has a visually hidden heading)
+- [ ] 2.4.11 Focus Not Obscured (Minimum) (AA)
+- [ ] 2.4.12 Focus Not Obscured (Enhanced) (AAA)
+- [ ] 2.4.13 Focus Appearance (AAA)
+- [ ] 2.5.1 Pointer Gestures (A) (not present)
+- [ ] 2.5.2 Pointer Cancellation (A)
+- [ ] 2.5.3 Label in Name (A)
+- [ ] 2.5.4 Motion Actuation (A) (not present)
+- [ ] 2.5.5 Target Size (Enhanced) (AAA)
+- [ ] 2.5.6 Concurrent Input Mechanisms (AAA)
+- [ ] 2.5.7 Dragging Movements (AA) (not present)
+- [ ] 2.5.8 Target Size (Minimum) (AA)
+- [ ] 3.1.1 Language of Page (A)
+- [ ] 3.1.2 Language of Parts (AA)
+- [ ] 3.1.3 Unusual Words (AAA) (Beer styles are not explained)
+- [ ] 3.1.4 Abbreviations (AAA) (Abbreviations are not explained)
+- [ ] 3.1.5 Reading Level (AAA) (To my knowledge, the text  is not more advanced than the level of a lower secondary education)
+- [ ] 3.1.6 Pronunciation (AAA) (not present)
+- [ ] 3.2.1 On Focus (A)
+- [ ] 3.2.2 On Input (A) (not present)
+- [ ] 3.2.3 Consistent Navigation (AA) (not present)
+- [ ] 3.2.4 Consistent Identification (AA)
+- [ ] 3.2.5 Change on Request (AAA)
+- [ ] 3.2.6 Consistent Help (A) (not present)
+- [ ] 3.3.1 Error Identification (A) (not present)
+- [ ] 3.3.2 Labels or Instructions (A) (not present)
+- [ ] 3.3.3 Error Suggestion (AA) (not present)
+- [ ] 3.3.4 Error Prevention (Legal, Financial, Data) (AA) (not present)
+- [ ] 3.3.5 Help (AAA) (not present)
+- [ ] 3.3.6 Error Prevention (All) (AAA) (not present)
+- [ ] 3.3.7 Redundant Entry (A) (not present)
+- [ ] 3.3.8 Accessible Authentication (Minimum) (AA) (not present)
+- [ ] 3.3.9 Accessible Authentication (Enhanced) (AAA) (not present)
+- [ ] 4.1.2 Name, Role, Value (A)
+- [ ] 4.1.3 Status Messages (AA) (not present)

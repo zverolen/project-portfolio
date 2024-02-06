@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import Disclosure from '../disclosure/Disclosure';
 import Button from '../button/Button';
 
-const svg = <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+const svg = <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.541016" y="7.79956" width="14.0002" height="15.0146"></rect>
               <rect x="11.4033" y="14.967" width="16.0215" height="11.5686"></rect>
               <rect x="8.26465" y="1.62061" width="14.6494" height="17.804" strokeWidth="2"></rect>
