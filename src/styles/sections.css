@@ -21,10 +21,6 @@ h1 > span:nth-child(1)::after {
 
 h1 > span:nth-child(1) span {
   display: block;
-  /* display: block;
-  
-  margin-inline: var(--centering-margin);
-  width: var(--site-width); */
   padding-block-start: var(--headerNamePadding);
 
   color: var(--text-color);
@@ -38,7 +34,6 @@ h1 > span:nth-child(2) {
 h1 > span:nth-child(2) span::after {
   content: "";
   position: absolute;
-  /* left: -0.21875em; */
   left: var(--headerFrameLeft);
   top: var(--headerFrameTop);
 
@@ -54,11 +49,6 @@ h1 > span:nth-child(2) span {
   position: relative;
 
   display: block;
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: min(80rem, 100vw - 2rem); */
-  
   color: var(--text-color);
 }
 
@@ -66,9 +56,6 @@ h1 > span:nth-child(3) {
   display: block;
 
   position: relative;
-  /* margin-left: auto;
-  margin-right: auto;
-  width: min(80rem, 100vw - 2rem); */
   font-size: var(--header-job-font-size);
 }
 
@@ -95,32 +82,17 @@ h1 > span:nth-child(3) span {
   color: var(--text-color);
 }
 
-/* header a {
-  display: inline-block;
-  width: clamp(3.125rem, 10.2222222222vw, 5.875rem);
-  height: clamp(3.125rem, 10.2222222222vw, 5.875rem);
-  cursor: pointer;
-} */
-
 h1 + div {
   display: flex;
   column-gap: var(--link-gap);
 
-  /* width: var(--site-width);
-  margin-inline: var(--centering-margin); */
   margin-block-start: min(-1.3333333333vw, -0.75rem);
 }
 
 header svg {
-  /* width: 100%; */
   stroke: var(--stroke-color);
-  /* stroke-width: min(0.3571428571vw, 0.125rem); */
   fill: var(--fill-color);
 }
-
-/* header svg path {
-  stroke-width: 1px;
-} */
 
 .skills {
   position: relative;
@@ -142,7 +114,6 @@ header svg {
   justify-content: center;
   
   width: min(var(--skillsHeadingWidth), 100vw - 1rem);
-  /* width: var(--skillsHeadingWidth); */
   margin-inline: var(--centering-margin);
   font-size: clamp(var(--skillsHeadingFontMin), var(--skillsHeadingFontIdeal), var(--skillsHeadingFontMax));
 }
@@ -151,8 +122,7 @@ header svg {
   content: "";
   position: absolute;
   height: var(--skillsHeadingFrameHeight);
-  /* width: var(--fullWidth); */
-  width: min(100%, 100vw);
+  width: min(var(--skillsHeadingFrameWidthOne), var(--skillsHeadingFrameWidthTwo));
   border: var(--border-width) var(--border-color) solid;
 }
 
@@ -169,9 +139,6 @@ header svg {
   justify-content: center;
   column-gap: var(--skillsHorizontalGap);
   row-gap: var(--skillsVerticalGap);
-
-  /* width: var(--site-width);
-  margin-inline: var(--centering-margin); */
 }
 
 .skills li {
@@ -191,38 +158,19 @@ header svg {
 }
 
 .projects > div:nth-child(1) {
-  /* position: relative; */
-
-  /* font-size: clamp(var(--headingTwoFontMin), var(--headingTwoFontIdeal), var(--headingTwoFontMax)); */
   background-color: var(--background-color);
 }
 
 .projects > div:nth-child(1)::after {
-  /* content: "";
-  position: absolute;
-  left: var(--resetNumber);
-  bottom: var(--verticalCenteringBottom);
-  transform: var(--verticalCenteringTranslate);
-
-  width: var(--projectsHeadingFrameWidth);
-  height: var(--projectsHeadingFrameHeight); */
-
   border: var(--border-width) var(--border-color) solid;
   border-left-width: var(--resetNumber);
 }
 
 .projects h2 {
-  /* width: var(--site-width);
-  margin-inline: var(--centering-margin); */
-
-  /* font-family: var(--heading-font-family);
-  font-size: inherit; */
   color: var(--text-color);
 }
 
 .projects > div:first-child + p {
-  /* width: var(--site-width);
-  margin-inline: var(--centering-margin); */
   margin-block-start: min(var(--projectsNoteMarginTopAbs), var(--projectsNoteMarginRel));
   margin-block-end: min(var(--projectsNoteMarginBottomAbs), var(--projectsNoteMarginRel));
 }
@@ -231,9 +179,6 @@ header svg {
   display: flex;
   flex-direction: column;
   row-gap: var(--projects-gap);
-
-  /* width: var(--site-width);
-  margin-inline: var(--centering-margin); */
 }
 
 .project {
@@ -248,12 +193,6 @@ header svg {
   border: var(--border-width) var(--border-color) solid;
 }
 
-/* .project > div {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--projects-gap);
-} */
-
 .project > div:nth-child(1) {
   display: flex;
   flex-wrap: wrap;
@@ -262,12 +201,6 @@ header svg {
 
   width: 100%;
 }
-
-/* .project > div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--projects-gap);
-} */
 
 .project > div:nth-child(2) > div {
   display: flex;
@@ -286,12 +219,6 @@ header svg {
 .projects img {
   margin-block-end: var(--gap-II);
 }
-
-/* .project h3 + div > div, .project ul {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--project-features-gap);
-} */
 
 .project > div:nth-child(2) > div > div, .project ul {
   display: flex;
@@ -336,39 +263,20 @@ header svg {
 }
 
 .about > div:nth-child(1) {
-  /* position: relative; */
-
-  /* font-size: clamp(var(--headingTwoFontMin), var(--headingTwoFontIdeal), var(--headingTwoFontMax)); */
   background-color: var(--site-background-color);
 }
 
 .about > div:nth-child(1)::after {
-  /* content: "";
-  position: absolute;
-  left: var(--resetNumber);
-  bottom: var(--verticalCenteringBottom);
-  transform: var(--verticalCenteringTranslate);
-
-  width: var(--projectsHeadingFrameWidth);
-  height: var(--projectsHeadingFrameHeight); */
-
   border: var(--border-width) var(--border-color) solid;
   border-left-width: var(--resetNumber);
 }
 
 .about h2 {
-  /* width: var(--site-width);
-  margin-inline: var(--centering-margin); */
-
-  /* font-family: var(--heading-font-family);
-  font-size: inherit; */
   color: var(--text-color);
   background-color: var(--background-color);
 }
 
 .about > div:nth-child(2) {
-  /* width: var(--site-width);
-  margin-inline: var(--centering-margin); */
   padding-top: var(--about-padding);
 }
 
@@ -377,7 +285,6 @@ header svg {
   height: var(--about-image-size);
   margin-inline: var(--centering-margin);
   margin-block-end: var(--about-gap);
-  /* margin-block-end: min(4rem, 7.1111111111vw); */
   border-radius: var(--circle-border-radius);
 }
 
@@ -390,11 +297,6 @@ footer {
   color: var(--text-color);
   background-color: var(--background-color);
 }
-
-/* footer > div {
-  width: var(--site-width);
-  margin-inline: var(--centering-margin);
-} */
 
 footer h2 {
   margin-block-end: var(--about-text-gap);

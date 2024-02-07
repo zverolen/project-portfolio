@@ -10,7 +10,6 @@
 
 @layer specific {
   .site-frame {
-    /* display: block; */
     box-sizing: border-box;
     margin-inline: var(--centering-margin);
     width: var(--site-width);

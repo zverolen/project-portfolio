@@ -37,7 +37,6 @@ button {
   min-height: var(--buttonHeightMin);
 
   font-family: var(--body-text-font-family);
-  /* font-size: var(--secondary-skill-font-size); */
   font-size: var(--button-font-size);
   text-decoration: underline;
   font-weight: var(--fontWeightPrimary);
@@ -72,7 +71,6 @@ header a, footer a {
 a svg {
   width: var(--fullWidth);
 
-  /* stroke-width: var(--border-width); */
   stroke-width: var(--svgStrokeWidth);
 }
 

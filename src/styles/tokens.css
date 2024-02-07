@@ -25,33 +25,24 @@
   --fontWeightSecondary: 500;
 
   --textSizeMin: calc(18 / 16 * 1rem);
-  /* --textSizeMin: calc(20 / 16 * 1rem); */
-  /* --textSizeMin: 1rem; */
   --textSizeIdeal: 2.6vw;
   --textSizeMax: calc(24 / 16 * 1rem);
 
   --headingOneFontMin: calc(32 / 16 * 1rem);
   --headingOneFontIdeal: 10.6vw;
-  /* --headingOneFontIdeal: 10vw; */
   --headingOneFontMax: calc(90 / 16 * 1rem);
 
-  /* --headingTwoFontMin: calc(32 / 16 * 1rem); */
   --headingTwoFontMin: calc(24 / 16 * 1rem);
   --headingTwoFontIdeal: 7.6vw;
-  /* --headingTwoFontIdeal: 7.1vw; */
   --headingTwoFontMax: calc(64 / 16 * 1rem);
 
   --skillsHeadingFontMin: calc(22 / 16 * 1rem);
-  /* --skillsHeadingFontMin: calc(24 / 16 * 1rem); */
-  /* --skillsHeadingFontMin: 1rem; */
   --skillsHeadingFontIdeal: 5.1vw;
   --skillsHeadingFontMax: calc(46 / 16 * 1rem);
 
-  /* --skillPrimaryFontMin: calc(18 / 16 * 1rem); */
   --skillPrimaryFontMin: calc(24 / 16 * 1rem);
   --skillPrimaryFontIdeal: 4.4444444444vw;
   --skillPrimaryFontMax: calc(40 / 16 * 1rem);
-  /* --skillSecondaryFontMin: 1rem; */
   --skillSecondaryFontMin: calc(20 / 16 * 1rem);
   --skillSecondaryFontIdeal: 3.1vw;
   --skillSecondaryFontMax: calc(28 / 16 * 1rem);
@@ -59,7 +50,6 @@
   --skillsTextTransform: uppercase;
 
   --projectsSubheadingFontMin: calc(18 / 16 * 1rem);
-  /* --projectsSubheadingFontMin: 1rem; */
   --projectsSubheadingFontIdeal: 3.6vw;
   --projectsSubheadingFontMax: calc(32 / 16 * 1rem);
   --buttonFontMin: var(--projectsSubheadingFontMin);
@@ -89,14 +79,12 @@
   --gap-VI: calc(64 / 16 * 1rem);
 
   --frameBorderRel: 0.38vw;
-  /* --frameBorderRel: 0.3571428571vw; */
   --frameBorderAbs: calc(2 / 16 * 1rem);
   --svgStrokeWidth: var(--frameBorderAbs);
 
   --headerNameWidth: 93.75vw;
   --headerNamePadding: 1.4444444444em;
 
-  /* --headerFrameLeft: calc(-6 / 16 * 1rem); */
   --headerFrameLeft: calc(-12 / 16 * 1rem);
   --headerFrameTop: -0.15625em;
   --headerFrameHeight: 2.65625em;
@@ -111,7 +99,8 @@
   --skillsGapMaxValue: 7.1111111111vw;
   --skillsHeadingWidth: 12.1739130435em;
   --skillsHeadingFrameHeight: 2.34782608em;
-  /* --skillsHeadingFrameHeight: 2.1304347826em; */
+  --skillsHeadingFrameWidthOne: 100%;
+  --skillsHeadingFrameWidthTwo: 100vw;
   --skillsHorizontalGap: calc(32 / 16 * 1rem);
   --skillsVerticalGap: var(--gap-III);
 
@@ -119,14 +108,10 @@
   --projectsHeadingFrameHeight: 1.75em;
 
   --projectsNoteMarginTopAbs: var(--gap-V);
-  /* --projectsNoteMarginTopAbs: calc(76 / 16 * 1rem); */
   --projectsNoteMarginBottomAbs: var(--gap-IV);
-  /* --projectsNoteMarginBottomAbs: var(--gap-VI); */
-  /* --projectsNoteMarginRel: 7.1vw; */
   --projectsNoteMarginRel: 6.3vw;
 
   --projectsGapAbs: var(--gap-IV);
-  /* --projectsGapRel: 3.5555555556vw; */
   --projectsGapRel: 3.2vw;
 
   --projectHeadingTop: calc(6 / 16 * 1rem);
@@ -137,7 +122,6 @@
   --projectBulletSizeAbs: calc(12 / 16 * 1rem);
   --projectBulletSizeRel: 1.3vw;
 
-  /* --buttonPadding: 0.4em; */
   --buttonPadding: 0.2857142857em;
   --buttonWidthMin: 3.35em;
   --buttonHeightMin: calc(44 / 16 * 1rem);
