@@ -63,7 +63,7 @@ export const projects = {
       imageToken: 'flight',
       description: 'This is a website for Night Flight - a local club for Sydney vampires who turn into bats and fly together. It was developed as a project for a Codecademy course. The assignment was to create a responsive website for a local club, utilizing flexible design principles without fixed values. The site features a simulated form submission widget (React).',
       features: [
-        'HTML, SASS and JS',
+        'HTML, CSS and JS',
         'Designed in browser',
         'Images created in Figma, Inkscape and Photoshop',
         'The images of bats are AI-generated'
