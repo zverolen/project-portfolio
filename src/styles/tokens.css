@@ -88,7 +88,7 @@
   --gap-V: calc(48 / 16 * 1rem);
   --gap-VI: calc(64 / 16 * 1rem);
 
-  --frameBorderRel: 0.36vw;
+  --frameBorderRel: 0.38vw;
   /* --frameBorderRel: 0.3571428571vw; */
   --frameBorderAbs: calc(2 / 16 * 1rem);
   --svgStrokeWidth: var(--frameBorderAbs);
