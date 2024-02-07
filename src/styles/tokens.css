@@ -10,7 +10,7 @@
   --colorPurpleDark: #462255;
   --colorPurpleLight: #D5C4FF;
   --colorRedLight: #D3715C;
-  --colorBlueLight: #639CA8;
+  --colorBlueLight: #6299A6;
   --colorRedDark: #85395F;
   --colorBlueDark: #384F54;
 
@@ -24,7 +24,8 @@
   --fontWeightPrimary: 300;
   --fontWeightSecondary: 500;
 
-  --textSizeMin: calc(20 / 16 * 1rem);
+  --textSizeMin: calc(18 / 16 * 1rem);
+  /* --textSizeMin: calc(20 / 16 * 1rem); */
   /* --textSizeMin: 1rem; */
   --textSizeIdeal: 2.6vw;
   --textSizeMax: calc(24 / 16 * 1rem);
@@ -117,12 +118,16 @@
   --projectsHeadingFrameWidth: 48.4126984127vw;
   --projectsHeadingFrameHeight: 1.75em;
 
-  --projectsNoteMarginTopMin: calc(76 / 16 * 1rem);
-  --projectsNoteMarginBottomMin: var(--gap-VI);
-  --projectsNoteMarginMax: 7.1vw;
+  --projectsNoteMarginTopAbs: var(--gap-V);
+  /* --projectsNoteMarginTopAbs: calc(76 / 16 * 1rem); */
+  --projectsNoteMarginBottomAbs: var(--gap-IV);
+  /* --projectsNoteMarginBottomAbs: var(--gap-VI); */
+  /* --projectsNoteMarginRel: 7.1vw; */
+  --projectsNoteMarginRel: 6.3vw;
 
   --projectsGapAbs: var(--gap-IV);
-  --projectsGapRel: 3.5555555556vw;
+  /* --projectsGapRel: 3.5555555556vw; */
+  --projectsGapRel: 3.2vw;
 
   --projectHeadingTop: calc(6 / 16 * 1rem);
 
@@ -132,7 +137,10 @@
   --projectBulletSizeAbs: calc(12 / 16 * 1rem);
   --projectBulletSizeRel: 1.3vw;
 
+  /* --buttonPadding: 0.4em; */
   --buttonPadding: 0.2857142857em;
+  --buttonWidthMin: 3.35em;
+  --buttonHeightMin: calc(44 / 16 * 1rem);
 
   --sectionPaddingAbs: calc(100 / 16 * 1rem);
   --sectionPaddingRel: 11.1111111111vw;

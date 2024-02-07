@@ -223,8 +223,8 @@ header svg {
 .projects > div:first-child + p {
   /* width: var(--site-width);
   margin-inline: var(--centering-margin); */
-  margin-block-start: min(var(--projectsNoteMarginTopMin), var(--projectsNoteMarginMax));
-  margin-block-end: min(var(--projectsNoteMarginBottomMin), var(--projectsNoteMarginMax));
+  margin-block-start: min(var(--projectsNoteMarginTopAbs), var(--projectsNoteMarginRel));
+  margin-block-end: min(var(--projectsNoteMarginBottomAbs), var(--projectsNoteMarginRel));
 }
 
 .projects > ul {

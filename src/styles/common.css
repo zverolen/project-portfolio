@@ -33,6 +33,8 @@ p, li {
 
 button {
   padding: var(--buttonPadding);
+  min-width: var(--buttonWidthMin);
+  min-height: var(--buttonHeightMin);
 
   font-family: var(--body-text-font-family);
   /* font-size: var(--secondary-skill-font-size); */
