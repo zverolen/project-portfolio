@@ -4,7 +4,7 @@
       --site-text-color: var(--colorBlack);
       --site-background-color: var(--colorWhite);
       --skills-background-color: var(--colorGreyLight);
-      --accent-color: var(--colorPurpleDark);
+      --accent-color: var(--colorPurpleLightTheme);
       --text-link-color: var(--colorGreyDark);
       --footer-background-color: var(--site-text-color);
       --decorative-color-I: var(--colorRedLight);
@@ -111,7 +111,7 @@
   @layer theme.dark {
     :root {
       --site-text-color: var(--colorGreyLight);
-      --site-background-color: var(--colorPurpleDark);
+      --site-background-color: var(--colorPurpleDarkTheme);
 
       --skills-background-color: var(--colorBlueDark);
 
@@ -128,7 +128,7 @@
     }
 
     h1 > span:nth-child(1) {
-      --text-color: var(--site-background-color);
+      --text-color: var(--site-text-color);
       --background-color: var(--decorative-color-I);
     }
 
@@ -158,7 +158,7 @@
       --border-color: var(--accent-color);
     }
 
-    .projects > div:nth-child(1)::after {
+    .projects h2::after {
       --border-color: var(--site-text-color);
     }
 
@@ -202,13 +202,13 @@
       --text-color: var(--site-text-color);
     }
 
-    .about > div:nth-child(1)::after {
-      --border-color: var(--site-text-color);
-    }
-
     .about h2 {
       --text-color: var(--site-text-color);
-      --background-color: var(---site-background-color);
+      --background-color: var(--site-background-color);
+    }
+
+    .about h2::after {
+      --border-color: var(--site-text-color);
     }
 
     footer path {

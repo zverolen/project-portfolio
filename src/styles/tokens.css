@@ -7,12 +7,21 @@
   --colorWhite: #FAFAFA;
   --colorGreyLight: #EEECEE;
   --colorGreyDark: #616161;
-  --colorPurpleDark: #462255;
+  --colorPurpleLightTheme: #462255;
+  --colorPurpleDarkTheme: #362D53;
+  /* --colorPurpleDark: #38285F; */
+  /* --colorPurpleDark: #462255; */
   --colorPurpleLight: #D5C4FF;
   --colorRedLight: #D3715C;
   --colorBlueLight: #6299A6;
-  --colorRedDark: #85395F;
-  --colorBlueDark: #384F54;
+  --colorRedDark: #8B3847;
+  /* --colorRedDark: #85395F; */
+  --colorBlueDark: #3D6150;
+  /* --colorBlueDark: #29535B; */
+  /* --colorBlueDark: #065562; */
+  /* --colorBlueDark: #20516D; */
+  /* --colorBlueDark: #374B72; */
+  /* --colorBlueDark: #384F54; */
 
   /* Typography | Primitive */
 
@@ -89,22 +98,16 @@
   --headerNameWidth: 93.75vw;
   --headerNamePadding: 1.4444444444em;
 
-  /* --headerFrameLeft: calc(-12 / 16 * 1rem); */
   --headerFrameLeft: calc(-8 / 16 * 1rem);
   --headerFrameTop: -0.15625em;
-  /* --headerFrameHeight: 2.65625em; */
   --headerFrameHeight: 2.5em;
   --headerFrameWidth: 200%;
 
-  /* --headerJobPaddingBottom: 1.09375em;
-  --headerJobPaddingLeft: 0.125em; */
   --headerJobPaddingBottom: calc(24 / 35 * 1em);
   --headerJobPaddingLeft: calc(4 / 35 * 1em);
-  /* --headerJobMargingLeft: calc(60 / 16 * 1rem); */
-  --headerJobMargingLeft: calc(24 / 16 * 1rem);
+  --headerJobMargingLeft: calc(50 / 64 * 1em);
 
   --headerLinksMarginRel: -1.15vw;
-  /* --headerLinksMarginAbs: calc(-12 /16 * 1rem); */
   --headerLinksMarginAbs: calc(-8 /16 * 1rem);
 
   --linkIconMin: calc(50 / 16 * 1rem);
