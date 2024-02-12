@@ -2,11 +2,9 @@ import { about } from "../../data/copy"
 
 export default function About() {
   return (
-    <section className="about">
+    <section className="about site-frame full-background">
+      <h2 className="site-frame full-background">{about.heading}</h2>
       <div>
-          <h2 className="site-frame">{about.heading}</h2>
-        </div>
-      <div className="site-frame">
         <img 
           src="./../../images/portrait-100.jpg"
           sizes="(min-width: calc(1000 / 16 * 1rem)) 12.5rem,

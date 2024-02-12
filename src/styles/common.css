@@ -80,13 +80,13 @@ header {
   overflow: hidden;
 }
 
-section:not(:first-of-type) > div:nth-child(1) {
+section:not(:first-of-type) h2 {
   position: relative;
-
+  font-family: var(--heading-font-family);
   font-size: clamp(var(--headingTwoFontMin), var(--headingTwoFontIdeal), var(--headingTwoFontMax));
 }
 
-section:not(:first-of-type) > div:nth-child(1)::after {
+section:not(:first-of-type) h2::after {
   content: "";
   position: absolute;
   left: var(--resetNumber);
@@ -95,9 +95,6 @@ section:not(:first-of-type) > div:nth-child(1)::after {
 
   width: var(--projectsHeadingFrameWidth);
   height: var(--projectsHeadingFrameHeight);
-}
 
-section:not(:first-of-type) > div:nth-child(1) h2 {
-  font-family: var(--heading-font-family);
-  font-size: inherit;
+  border-image: conic-gradient(var(--border-color), var(--border-color)) 1 1 1 0/var(--border-width)/0 0 0 100vw;
 }

@@ -2,16 +2,12 @@ export default function Header() {
   return (
     <header>
       <h1>
-        <span>
           <span className="site-frame">
             Lena Zvereva 
           </span>
-        </span>
-        <span>
           <span className="site-frame">
               Front-End 
           </span>
-        </span>
         <span className="site-frame">
           <span>
               Web Developer

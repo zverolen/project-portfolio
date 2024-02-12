@@ -16,28 +16,22 @@
       --background-color: var(--site-background-color)
     }
 
-    h1 > span:nth-child(1)::after {
+    h1 > span:nth-child(1) {
+      --text-color: var(--site-background-color);
       --background-color: var(--decorative-color-I);
     }
 
-    h1 > span:nth-child(1) span {
-      --text-color: var(--site-background-color);
-    }
-
-    h1 > span:nth-child(2) span::after {
+    h1 > span:nth-child(2)::after {
       --border-color: var(--accent-color);
     }
 
-    h1 > span:nth-child(2) span {
+    h1 > span:nth-child(2) {
       --text-color: var(--accent-color);
-    }
-
-    h1 > span:nth-child(3)::after {
-      --background-color: var(--decorative-color-II);
     }
 
     h1 > span:nth-child(3) span {
       --text-color: var(--site-background-color);
+      --background-color: var(--decorative-color-II);
     }
 
     header svg {
@@ -49,17 +43,17 @@
       --background-color: var(--skills-background-color);
     }
 
-    .skills div:nth-child(1)::after {
+    .skills h2 {
       --border-color: var(--accent-color);
     }
 
-    .projects > div:nth-child(1) {
-      --background-color: var(--accent-color);
-      --text-color: var(--site-background-color);
+    .projects h2::after {
+      --border-color: var(--site-text-color);
     }
 
-    .projects > div:nth-child(1)::after {
-      --border-color: var(--site-text-color);
+    .projects h2 {
+      --background-color: var(--accent-color);
+      --text-color: var(--site-background-color);
     }
 
     .project {
@@ -97,13 +91,13 @@
       --text-color: var(--site-background-color);
     }
 
-    .about > div:nth-child(1)::after {
-      --border-color: var(--site-background-color);
-    }
-
     .about h2 {
       --text-color: var(--site-text-color);
       --background-color: var(--site-background-color);
+    }
+
+    .about h2::after {
+      --border-color: var(--site-background-color);
     }
 
     footer path {
@@ -133,28 +127,22 @@
       --background-color: var(--site-background-color)
     }
 
-    h1 > span:nth-child(1)::after {
+    h1 > span:nth-child(1) {
+      --text-color: var(--site-background-color);
       --background-color: var(--decorative-color-I);
     }
 
-    h1 > span:nth-child(1) span {
-      --text-color: var(--site-text-color);
-    }
-
-    h1 > span:nth-child(2) span::after {
+    h1 > span:nth-child(2)::after {
       --border-color: var(--accent-color);
     }
 
-    h1 > span:nth-child(2) span {
+    h1 > span:nth-child(2) {
       --text-color: var(--accent-color);
-    }
-
-    h1 > span:nth-child(3)::after {
-      --background-color: var(--decorative-color-II);
     }
 
     h1 > span:nth-child(3) span {
       --text-color: var(--site-text-color);
+      --background-color: var(--decorative-color-II);
     }
 
     header svg {
@@ -166,17 +154,17 @@
       --background-color: var(--skills-background-color);
     }
 
-    .skills div:nth-child(1)::after {
+    .skills h2 {
       --border-color: var(--accent-color);
-    }
-
-    .projects > div:nth-child(1) {
-      --background-color: var(--accent-color);
-      --text-color: var(--site-background-color);
     }
 
     .projects > div:nth-child(1)::after {
       --border-color: var(--site-text-color);
+    }
+
+    .projects h2 {
+      --background-color: var(--accent-color);
+      --text-color: var(--site-background-color);
     }
 
     .project {

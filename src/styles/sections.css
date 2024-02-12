@@ -1,37 +1,14 @@
 h1 > span:nth-child(1) {
-  position: relative;
-  display: block;
-
-  font-size: var(--header-name-font-size);
-}
-
-h1 > span:nth-child(1)::after {
-  content: "";
-
-  position: absolute;
-  top: var(--resetNumber);
-  z-index: var(--layer-down-I);
-
-  width: var(--headerNameWidth);
-  height: var(--fullHeight);
-  margin-right: auto;
-
-  background-color: var(--background-color);
-}
-
-h1 > span:nth-child(1) span {
   display: block;
   padding-block-start: var(--headerNamePadding);
 
+  font-size: var(--header-name-font-size);
+
   color: var(--text-color);
+  border-image: conic-gradient(var(--background-color), var(--background-color)) fill 0/0/0 0 0 100vw;
 }
 
-h1 > span:nth-child(2) {
-  display: block;
-  font-size: var(--header-job-font-size);
-}
-
-h1 > span:nth-child(2) span::after {
+h1 > span:nth-child(2)::after {
   content: "";
   position: absolute;
   left: var(--headerFrameLeft);
@@ -45,8 +22,10 @@ h1 > span:nth-child(2) span::after {
   border-right-width: var(--resetNumber);
 }
 
-h1 > span:nth-child(2) span {
+h1 > span:nth-child(2) {
   position: relative;
+
+  font-size: var(--header-job-font-size);
 
   display: block;
   color: var(--text-color);
@@ -59,27 +38,17 @@ h1 > span:nth-child(3) {
   font-size: var(--header-job-font-size);
 }
 
-h1 > span:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  top: var(--resetNumber);
-  left: var(--headerJobBackgroundLeft);
-  z-index: var(--layer-down-I);
-
-  width: 100vw;
-  height: 100%;
-  margin-left: auto;
-  background-color: var(--background-color);
-  
-}
-
 h1 > span:nth-child(3) span {
+  position: relative;
+  z-index: -1;
   display: block;
   
   padding-bottom: 1.09375em;
   padding-left: 0.125em;
   margin-left: 60px;
   color: var(--text-color);
+
+  border-image: conic-gradient(var(--background-color), var(--background-color)) fill 0/0/0 100vw 0 0;
 }
 
 h1 + div {
@@ -102,8 +71,6 @@ header svg {
   row-gap: min(var(--skills-gap-min), var(--skills-gap-max));
 
   padding-bottom: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));
-  
-  background-color: var(--background-color);
 }
 
 .skills > div:nth-child(1) {
@@ -118,19 +85,13 @@ header svg {
   font-size: clamp(var(--skillsHeadingFontMin), var(--skillsHeadingFontIdeal), var(--skillsHeadingFontMax));
 }
 
-.skills div:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  height: var(--skillsHeadingFrameHeight);
-  width: min(var(--skillsHeadingFrameWidthOne), var(--skillsHeadingFrameWidthTwo));
-  border: var(--border-width) var(--border-color) solid;
-}
-
 .skills h2 {
   margin: var(--resetMargin);
 
   text-align: center;
   font-size: inherit;
+
+  border-image: conic-gradient(var(--border-color), var(--border-color)) 1/var(--border-width)/0.34em 0;
 }
 
 .skills ul {
@@ -157,20 +118,11 @@ header svg {
   padding-block: var(--projects-padding-top) var(--projects-padding-bottom);
 }
 
-.projects > div:nth-child(1) {
-  background-color: var(--background-color);
-}
-
-.projects > div:nth-child(1)::after {
-  border: var(--border-width) var(--border-color) solid;
-  border-left-width: var(--resetNumber);
-}
-
 .projects h2 {
   color: var(--text-color);
 }
 
-.projects > div:first-child + p {
+.projects > p {
   margin-block-start: min(var(--projectsNoteMarginTopAbs), var(--projectsNoteMarginRel));
   margin-block-end: min(var(--projectsNoteMarginBottomAbs), var(--projectsNoteMarginRel));
 }
@@ -226,7 +178,6 @@ header svg {
   row-gap: var(--project-features-gap);
 }
 
-
 .project li {
   display: flex;
   align-items: baseline;
@@ -259,16 +210,10 @@ header svg {
   padding-top: var(--about-padding);
 
   color: var(--text-color);
-  background-color: var(--background-color);
 }
 
 .about > div:nth-child(1) {
   background-color: var(--site-background-color);
-}
-
-.about > div:nth-child(1)::after {
-  border: var(--border-width) var(--border-color) solid;
-  border-left-width: var(--resetNumber);
 }
 
 .about h2 {
@@ -295,7 +240,6 @@ header svg {
 footer {
   padding-block: var(--about-gap) var(--about-padding);
   color: var(--text-color);
-  background-color: var(--background-color);
 }
 
 footer h2 {
