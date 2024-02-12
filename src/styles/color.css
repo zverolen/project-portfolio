@@ -56,6 +56,10 @@
       --text-color: var(--site-background-color);
     }
 
+    .projects img {
+      --border-color: var(--site-background-color);
+    }
+
     .project {
       --border-color: var(--site-text-color);
     }
@@ -168,6 +172,10 @@
     }
 
     .project {
+      --border-color: var(--site-text-color);
+    }
+
+    .projects img {
       --border-color: var(--site-text-color);
     }
 

@@ -148,13 +148,15 @@ header svg {
   border: var(--border-width) var(--border-color) solid;
 }
 
+.project > div {
+  width: var(--fullWidth);
+}
+
 .project > div:nth-child(1) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
-  width: var(--fullWidth);
 }
 
 .project > div:nth-child(2) > div {
@@ -173,6 +175,8 @@ header svg {
 
 .projects img {
   margin-block-end: var(--gap-II);
+
+  border: var(--border-width) var(--border-color) solid;
 }
 
 .project > div:nth-child(2) > div > div, .project ul {

@@ -98,7 +98,8 @@
   --headerNameWidth: 93.75vw;
   --headerNamePadding: 1.4444444444em;
 
-  --headerFrameLeft: calc(-8 / 16 * 1rem);
+  /* --headerFrameLeft: calc(-32 / 64 * 1em); */
+  --headerFrameLeft: calc(-16 / 64 * 1em);
   --headerFrameTop: -0.15625em;
   --headerFrameHeight: 2.5em;
   --headerFrameWidth: 200%;
