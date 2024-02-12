@@ -54,7 +54,7 @@ export default function Project({
               </ul>
             </div>
             <div>
-              {project.linkBrowserText && <a href={project.linkBrowserHref}>{project.linkBrowserText}</a>}
+              {/* {project.linkBrowserText && <a href={project.linkBrowserHref}>{project.linkBrowserText}</a>} */}
               <a href={project.linkGithubHref}>{project.linkGithubText}</a>
             </div>
           </div>
