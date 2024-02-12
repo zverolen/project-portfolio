@@ -3,7 +3,7 @@ import { about } from "../../data/copy"
 export default function About() {
   return (
     <section className="about site-frame full-background">
-      <h2 className="site-frame full-background">{about.heading}</h2>
+      <h2 className="full-background">{about.heading}</h2>
       <div>
         <img 
           src="./../../images/portrait-100.jpg"

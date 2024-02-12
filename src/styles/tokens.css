@@ -68,7 +68,9 @@
   --verticalCenteringBottom: 50%;
   --verticalCenteringTranslate: translateY(50%);
 
-  --siteWidthMin: calc(1280 / 16 * 1rem);
+  --siteWidthMin: 90%;
+  --siteWidthIdeal: calc(100vw - 4rem);
+  --siteWidthMax: calc(1280 / 16 * 1rem);
 
   --gap-0-I: calc(4 / 16 * 1rem);
   --gap-I: calc(8 / 16 * 1rem);
@@ -90,19 +92,25 @@
   --headerFrameHeight: 2.65625em;
   --headerFrameWidth: 200%;
 
-  --headerJobBackgroundLeft: calc(48 / 16 * 1rem);
+  --headerJobPaddingBottom: 1.09375em;
+  --headerJobPaddingLeft: 0.125em;
+  --headerJobMargingLeft: calc(60 / 16 * 1rem);
+
+  --headerLinksMarginRel: -1.3333333333vw;
+  --headerLinksMarginAbs: -0.75rem;
 
   --linkIconMin: calc(50 / 16 * 1rem);
   --linkIconIdeal: 10.2vw;
   --linkIconMax: calc(94 / 16 * 1rem);
 
-  --skillsGapMaxValue: 7.1111111111vw;
+  --skillsGapMaxValue: 8vw;
   --skillsHeadingWidth: 12.1739130435em;
   --skillsHeadingFrameHeight: 2.34782608em;
   --skillsHeadingFrameWidthOne: 100%;
   --skillsHeadingFrameWidthTwo: 100vw;
   --skillsHorizontalGap: calc(32 / 16 * 1rem);
-  --skillsVerticalGap: var(--gap-III);
+  --skillsVerticalAbs: var(--gap-III);
+  --skillsVerticalRel: calc( (8 * 100) / 320 * 1vw);
 
   --projectsHeadingFrameWidth: 48.4126984127vw;
   --projectsHeadingFrameHeight: 1.75em;
@@ -144,8 +152,7 @@
   --circle-border-radius: 50%;
 
   /* Layers | Primitive */
-  --layer-down-I: -1;
-
+  --layerDown-I: -1;
 
   /* Semantic tokens */
 
@@ -158,13 +165,15 @@
   --button-font-size: clamp(var(--buttonFontMin), var(--buttonFontIdeal), var(--buttonFontMax));
 
   /* Sizing */
-  --site-width: min(var(--siteWidthMin), 100vw - 3rem);
+  --site-width: clamp(var(--siteWidthMin), var(--siteWidthIdeal), var(--siteWidthMax));
   --border-width: min(var(--frameBorderRel), var(--frameBorderAbs));
   --section-padding: min(var(--sectionPaddingAbs), var(--sectionPaddingRel));
 
   --header-padding: var(--about-gap);
   --header-name-font-size: clamp(var(--headingOneFontMin), var(--headingOneFontIdeal), var(--headingOneFontMax));
   --header-job-font-size: clamp(var(--headingTwoFontMin), var(--headingTwoFontIdeal), var(--headingTwoFontMax));
+
+  --header-links-margin: min(var(--headerLinksMarginAbs), var(--headerLinksMarginRel));
 
   --link-icon-size: clamp(var(--linkIconMin), var(--linkIconIdeal), var(--linkIconMax));
   --link-gap: var(--project-features-gap);
@@ -173,6 +182,8 @@
   --skills-padding-bottom-max: var(--skillsGapMaxValue);
   --skills-gap-min: var(--skills-padding-bottom-min);
   --skills-gap-max: var(--skills-padding-bottom-max);
+  --skills-vertical-gap: min(var(--skillsVerticalAbs), var(--skillsVerticalRel));
+  --skills-vertical-padding: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));
 
   --projects-padding-top: var(--section-padding);
   --projects-padding-bottom: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));

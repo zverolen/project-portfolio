@@ -40,12 +40,14 @@ h1 > span:nth-child(3) {
 
 h1 > span:nth-child(3) span {
   position: relative;
-  z-index: -1;
+  z-index: var(--layerDown-I);
+
   display: block;
   
-  padding-bottom: 1.09375em;
-  padding-left: 0.125em;
-  margin-left: 60px;
+  padding-block-end: var(--headerJobPaddingBottom);
+  padding-inline-start: var(--headerJobPaddingLeft);
+  margin-inline-start: var(--headerJobMargingLeft);
+
   color: var(--text-color);
 
   border-image: conic-gradient(var(--background-color), var(--background-color)) fill 0/0/0 100vw 0 0;
@@ -55,7 +57,7 @@ h1 + div {
   display: flex;
   column-gap: var(--link-gap);
 
-  margin-block-start: min(-1.3333333333vw, -0.75rem);
+  margin-block-start: var(--header-links-margin);
 }
 
 header svg {
@@ -70,7 +72,7 @@ header svg {
   flex-direction: column;
   row-gap: min(var(--skills-gap-min), var(--skills-gap-max));
 
-  padding-bottom: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));
+  padding-bottom: var(--skills-vertical-padding);
 }
 
 .skills > div:nth-child(1) {
@@ -80,7 +82,6 @@ header svg {
   flex-direction: column;
   justify-content: center;
   
-  width: min(var(--skillsHeadingWidth), 100vw - 1rem);
   margin-inline: var(--centering-margin);
   font-size: clamp(var(--skillsHeadingFontMin), var(--skillsHeadingFontIdeal), var(--skillsHeadingFontMax));
 }
@@ -91,7 +92,7 @@ header svg {
   text-align: center;
   font-size: inherit;
 
-  border-image: conic-gradient(var(--border-color), var(--border-color)) 1/var(--border-width)/0.34em 0;
+  border-image: conic-gradient(var(--border-color), var(--border-color)) 1/var(--border-width)/0.34em 0.8em;
 }
 
 .skills ul {
@@ -99,7 +100,9 @@ header svg {
   flex-wrap: wrap;
   justify-content: center;
   column-gap: var(--skillsHorizontalGap);
-  row-gap: var(--skillsVerticalGap);
+  row-gap: var(--skills-vertical-gap);
+
+  text-wrap: nowrap;
 }
 
 .skills li {
@@ -151,7 +154,7 @@ header svg {
   justify-content: space-between;
   align-items: center;
 
-  width: 100%;
+  width: var(--fullWidth);
 }
 
 .project > div:nth-child(2) > div {
@@ -217,6 +220,8 @@ header svg {
 }
 
 .about h2 {
+  width: var(--fullWidth);
+
   color: var(--text-color);
   background-color: var(--background-color);
 }

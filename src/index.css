@@ -16,7 +16,7 @@
   }
 
   .full-background {
-    border-image: conic-gradient(var(--background-color) 0 0) fill 0//0 100vw;
+    border-image: conic-gradient(var(--background-color) 0 0) fill 0/0/0 100vw;
   }
 
   /* Visually hidden elements are visible to screen readers */
