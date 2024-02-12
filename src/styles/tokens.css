@@ -28,11 +28,13 @@
   --textSizeIdeal: 2.6vw;
   --textSizeMax: calc(24 / 16 * 1rem);
 
-  --headingOneFontMin: calc(32 / 16 * 1rem);
+  --headingOneFontMin: calc(40 / 16 * 1rem);
+  /* --headingOneFontMin: calc(32 / 16 * 1rem); */
   --headingOneFontIdeal: 10.6vw;
   --headingOneFontMax: calc(90 / 16 * 1rem);
 
-  --headingTwoFontMin: calc(24 / 16 * 1rem);
+  --headingTwoFontMin: calc(32 / 16 * 1rem);
+  /* --headingTwoFontMin: calc(24 / 16 * 1rem); */
   --headingTwoFontIdeal: 7.6vw;
   --headingTwoFontMax: calc(64 / 16 * 1rem);
 
@@ -87,17 +89,23 @@
   --headerNameWidth: 93.75vw;
   --headerNamePadding: 1.4444444444em;
 
-  --headerFrameLeft: calc(-12 / 16 * 1rem);
+  /* --headerFrameLeft: calc(-12 / 16 * 1rem); */
+  --headerFrameLeft: calc(-8 / 16 * 1rem);
   --headerFrameTop: -0.15625em;
-  --headerFrameHeight: 2.65625em;
+  /* --headerFrameHeight: 2.65625em; */
+  --headerFrameHeight: 2.5em;
   --headerFrameWidth: 200%;
 
-  --headerJobPaddingBottom: 1.09375em;
-  --headerJobPaddingLeft: 0.125em;
-  --headerJobMargingLeft: calc(60 / 16 * 1rem);
+  /* --headerJobPaddingBottom: 1.09375em;
+  --headerJobPaddingLeft: 0.125em; */
+  --headerJobPaddingBottom: calc(24 / 35 * 1em);
+  --headerJobPaddingLeft: calc(4 / 35 * 1em);
+  /* --headerJobMargingLeft: calc(60 / 16 * 1rem); */
+  --headerJobMargingLeft: calc(24 / 16 * 1rem);
 
-  --headerLinksMarginRel: -1.3333333333vw;
-  --headerLinksMarginAbs: -0.75rem;
+  --headerLinksMarginRel: -1.15vw;
+  /* --headerLinksMarginAbs: calc(-12 /16 * 1rem); */
+  --headerLinksMarginAbs: calc(-8 /16 * 1rem);
 
   --linkIconMin: calc(50 / 16 * 1rem);
   --linkIconIdeal: 10.2vw;
