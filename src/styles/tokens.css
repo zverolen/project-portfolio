@@ -177,7 +177,8 @@
   --button-font-size: clamp(var(--buttonFontMin), var(--buttonFontIdeal), var(--buttonFontMax));
 
   /* Sizing */
-  --site-width: clamp(var(--siteWidthMin), var(--siteWidthIdeal), var(--siteWidthMax));
+  /* --site-width: clamp(var(--siteWidthMin), var(--siteWidthIdeal), var(--siteWidthMax)); */
+  --site-width: min(var(--siteWidthIdeal), var(--siteWidthMax));
   --border-width: min(var(--frameBorderRel), var(--frameBorderAbs));
   --section-padding: min(var(--sectionPaddingAbs), var(--sectionPaddingRel));
 
