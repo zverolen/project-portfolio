@@ -15,9 +15,8 @@ export default function Disclosure({ children, projectName }) {
         <h3>{projectName}</h3>
         <Button isExpanded={isExpanded} handleClick={handleExpand} />
       </div>
-      <div aria-live="polite">  
+       
         {isExpanded && children} 
-      </div>
     </>
   )
 }
