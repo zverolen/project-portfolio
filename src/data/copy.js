@@ -85,6 +85,8 @@ export const about = {
 
 export const contact = {
   heading: "Contact:",
-  tg: "t.me/zverolen",
-  email: "zverolen@gmail.com"
+  tg: "https://t.me/zverolen",
+  email: "mailto:zverolen@gmail.com",
+  linkedin: "https://www.linkedin.com/in/elena-zvereva-722b3177",
+  github: "https://github.com/zverolen"
 }
