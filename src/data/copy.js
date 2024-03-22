@@ -23,7 +23,7 @@ export const projects = {
       linkGithubText: 'Go to the app repository on Github',
       linkGithubHref: 'https://github.com/zverolen/vocab-srpski',
       linkBrowserText: 'Open the app in browser',
-      linkBrowserHref: '/znaju'
+      linkBrowserHref: '/znaju/znaju'
     },
     {
       id: 2,
@@ -55,7 +55,7 @@ export const projects = {
       linkGithubText: 'Go to the brewery project on Github',
       linkGithubHref: 'https://github.com/zverolen/project-business-site',
       linkBrowserText: 'Open the brewery site in browser',
-      linkBrowserHref: '/o2'
+      linkBrowserHref: '/o2/o2'
     },
     {
       id: 3,
@@ -71,7 +71,7 @@ export const projects = {
       linkGithubText: 'Go to the Night Flight project on Github',
       linkGithubHref: 'https://github.com/zverolen/project-local-club',
       linkBrowserText: 'Open the Night Flight site in browser',
-      linkBrowserHref: '/night-flight'
+      linkBrowserHref: '/night-flight/night-flight'
     }
   ]
 }

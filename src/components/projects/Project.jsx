@@ -13,7 +13,8 @@ export default function Project({
   return(
     <li className="project" key={project.id}>
       <Disclosure projectName={project.name}>
-          <div>
+        <div aria-live="polite">
+        <div>
             <img 
               src={`./images/flight-mock-210.png`}
               sizes="(min-width: calc(1462 / 16 * 1rem)) 75.75rem,
@@ -58,6 +59,7 @@ export default function Project({
               <a href={project.linkGithubHref}>{project.linkGithubText}</a>
             </div>
           </div>
+        </div>  
       </Disclosure>
       
     </li>
