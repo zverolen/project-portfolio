@@ -73,6 +73,13 @@ header svg {
   row-gap: min(var(--skills-gap-min), var(--skills-gap-max));
 
   padding-bottom: var(--skills-vertical-padding);
+
+  }
+
+@media (prefers-color-scheme: dark) {
+  .skills {
+    color: var(--colorDTBlack);
+  }
 }
 
 .skills > div:nth-child(1) {
