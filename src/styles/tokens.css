@@ -195,7 +195,9 @@
   --skills-vertical-padding: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));
 
   --projects-padding-top: var(--section-padding);
-  --projects-padding-bottom: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max));
+  /* --projects-padding-bottom: min(var(--skills-padding-bottom-min), var(--skills-padding-bottom-max)); */
+  --projects-padding-bottom: min(calc(16 / 16 * 1rem), 6vw);
+  /* --projects-padding-bottom: calc(32 / 16 * 1rem); */
   --projects-gap: min(var(--projectsGapAbs), var(--projectsGapRel));
   --project-features-gap: min(var(--projectFeaturesGapAbs), var(--projectFeaturesGapRel));
   --project-bullet-size: max(var(--projectBulletSizeAbs), var(--projectBulletSizeRel));

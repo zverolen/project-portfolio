@@ -147,7 +147,7 @@
 
     h1 > span:nth-child(2) {
       /* --text-color: var(--accent-color); */
-      --text-color: var(--colorDTBlue);
+      --text-color: var(--site-text-color);
     }
 
     h1 > span:nth-child(3) span {
@@ -159,7 +159,7 @@
 
     header svg {
       /* --stroke-color: var(--accent-color); */
-      --stroke-color: var(--colorDTBlue);
+      --stroke-color: var(--site-text-color);
       --fill-color: transparent;
     }
 
@@ -169,7 +169,7 @@
     }
 
     .skills h2 {
-      --border-color: var(--accent-color);
+      --border-color: var(--site-text-color);
     }
 
     .projects h2::after {
@@ -193,12 +193,14 @@
     }
 
     .project svg rect:nth-child(1) {
-      --fill-color: var(--colorRedLight);
+      /* --fill-color: var(--colorRedLight); */
+      --fill-color: var(--colorDTBrown);
       --stroke-color: var(--fill-color);
     }
 
     .project svg rect:nth-child(2) {
-      --fill-color: var(--accent-color);
+      /* --fill-color: var(--accent-color); */
+      --fill-color: var(--colorDTGreen);
       --stroke-color: var(--fill-color);
     }
 
@@ -208,13 +210,16 @@
     }
 
     .project a {
-      --text-color: var(--text-link-color);
-      --background-color: var(--site-background-color);
+      /* --text-color: var(--text-link-color); */
+      --text-color: var(--site-text-color);
+      /* --background-color: var(--site-background-color); */
+      --background-color: var(--colorDTBlack);
     }
 
     button {
       --text-color: var(--site-text-color);
-      --background-color: var(--site-background-color);
+      /* --background-color: var(--site-background-color); */
+      --background-color: var(--colorDTBlack);
       --border-color: var(--site-text-color);
     }
 

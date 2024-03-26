@@ -33,18 +33,25 @@
 
 @layer states {
   header a:hover svg, header a:focus-visible svg {
-    --fill-color: var(--accent-color)
+    /* --fill-color: var(--accent-color); */
+    --fill-color: var(--site-text-color);
+
   }
 
   .project a:hover, .project a:focus-visible {
-    --text-color: var(--site-background-color);
-    --background-color: var(--text-link-color);
+    /* --text-color: var(--site-background-color); */
+    --text-color: var(--site-text-color);
+    /* --background-color: var(--text-link-color); */
+    --background-color: var(--colorDTBrown);
   }
 
   button:hover, button:focus-visible {
     --text-color: var(--site-background-color);
-    --background-color: var(--accent-color);
-    --border-color: var(--accent-color);
+    /* --background-color: var(--accent-color); */
+    --background-color: var(--site-text-color);
+    
+    /* --border-color: var(--accent-color); */
+    --border-color: var(--site-text-color);
 
     outline-offset: var(--button-outline-offset);
   }
