@@ -115,57 +115,45 @@
   @layer theme.dark {
     :root {
       --site-text-color: var(--colorGreyLight);
-      --site-background-color: var(--colorPurpleDarkTheme);
-
-      --skills-background-color: var(--colorBlueDark);
-
-      /* --accent-color: var(--colorPurpleLight); */
-      --accent-color: var(--colorDTBlue);
+      --site-background-color: var(--colorDTBlack);
+      --skills-background-color: var(--colorDTGreen);
+      --accent-color: var(--site-text-color);
       --text-link-color: var(--accent-color);
       --footer-background-color: var(--site-text-color);
-      --decorative-color-I: var(--colorRedDark);
-      --decorative-color-II: var(--colorBlueDark);
+      --decorative-color-I: var(--colorDTBrown);
+      --decorative-color-II: var(--colorDTGreen);
     }
 
     body {
       --text-color: var(--site-text-color);
-      /* --background-color: var(--site-background-color) */
-      --background-color: var(--colorDTBlack);
+      --background-color: var(--site-background-color)
     }
 
     h1 > span:nth-child(1) {
-      /* --text-color: var(--site-text-color); */
-      --text-color: var(--colorDTBlack);
-      /* --background-color: var(--decorative-color-I); */
-      --background-color: var(--colorDTBrown);
+      --text-color: var(--site-background-color);
+      --background-color: var(--decorative-color-I);
     }
 
     h1 > span:nth-child(2)::after {
-      /* --border-color: var(--accent-color); */
-      --border-color: var(--site-text-color);
+      --border-color: var(--accent-color);
     }
 
     h1 > span:nth-child(2) {
-      /* --text-color: var(--accent-color); */
-      --text-color: var(--site-text-color);
+      --text-color: var(--accent-color);
     }
 
     h1 > span:nth-child(3) span {
-      /* --text-color: var(--site-text-color); */
-      --text-color: var(--colorDTBlack);
-      /* --background-color: var(--decorative-color-II); */
-      --background-color: var(--colorDTGreen);
+      --text-color: var(--site-background-color);
+      --background-color: var(--decorative-color-II);
     }
 
     header svg {
-      /* --stroke-color: var(--accent-color); */
-      --stroke-color: var(--site-text-color);
+      --stroke-color: var(--accent-color);
       --fill-color: transparent;
     }
 
     .skills {
-      /* --background-color: var(--skills-background-color); */
-      --background-color: var(--colorDTGreen);
+      --background-color: var(--skills-background-color);
     }
 
     .skills h2 {
@@ -174,14 +162,11 @@
 
     .projects h2::after {
       --border-color: var(--site-text-color);
-      /* --border-color: var(--colorDTBrown); */
     }
 
     .projects h2 {
-      /* --background-color: var(--accent-color); */
-      --background-color: var(--colorDTBrown);
-      /* --text-color: var(--site-background-color); */
-      --text-color: var(--colorDTBlack);
+      --background-color: var(--decorative-color-I);
+      --text-color: var(--site-background-color);
     }
 
     .project {
@@ -193,14 +178,12 @@
     }
 
     .project svg rect:nth-child(1) {
-      /* --fill-color: var(--colorRedLight); */
-      --fill-color: var(--colorDTBrown);
+      --fill-color: var(--decorative-color-I);
       --stroke-color: var(--fill-color);
     }
 
     .project svg rect:nth-child(2) {
-      /* --fill-color: var(--accent-color); */
-      --fill-color: var(--colorDTGreen);
+      --fill-color: var(--decorative-color-II);
       --stroke-color: var(--fill-color);
     }
 
@@ -210,30 +193,24 @@
     }
 
     .project a {
-      /* --text-color: var(--text-link-color); */
       --text-color: var(--site-text-color);
-      /* --background-color: var(--site-background-color); */
-      --background-color: var(--colorDTBlack);
+      --background-color: var(--site-background-color);
     }
 
     button {
       --text-color: var(--site-text-color);
-      /* --background-color: var(--site-background-color); */
-      --background-color: var(--colorDTBlack);
+      --background-color: var(--site-background-color);
       --border-color: var(--site-text-color);
     }
 
     .about, footer {
-      /* --background-color: var(--decorative-color-I); */
-      --background-color: var(--colorDTBlack);
+      --background-color: var(--site-background-color);
       --text-color: var(--site-text-color);
     }
 
     .about h2 {
-      /* --text-color: var(--site-text-color); */
-      --text-color: var(--colorDTBlack);
-      /* --background-color: var(--site-background-color); */
-      --background-color: var(--colorDTBrown);
+      --text-color: var(--site-background-color);
+      --background-color: var(--decorative-color-I);
     }
 
     .about h2::after {

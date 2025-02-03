@@ -1,6 +1,7 @@
 export const skills = {
-  primary: ['HTML', 'Modern CSS', 'SASS', 'JS', 'React', 'Git', 'Accessibility', 'Responsive Images', 'Automated Testing'],
-  secondary: ['UX/UI', 'Figma/Penpot', 'Intrinsic Web Design', 'Photoshop', 'Inkscape']
+  primary: ['JS', 'React', 'Redux', 'Typescript', 'HTML', 'Modern CSS', 'Git', 'Accessibility', 'Responsive Images'],
+  // primary: ['JS', 'React', 'HTML', 'Modern CSS', 'SASS', 'Git', 'Accessibility', 'Responsive Images', 'Automated Testing'],
+  secondary: ['Sass', 'UX/UI', 'Figma/Penpot', 'Intrinsic Web Design', 'Inkscape', 'Automated Testing']
 }
 
 export const projects = {
@@ -9,9 +10,24 @@ export const projects = {
   projects: [
     {
       id: 1,
+      name: 'Race Dashboard',
+      imageToken: 'dashboard',
+      description: 'A React/Redux app for go-kart races (mobile version). It helps team managers make strategic decisions based on the number of metrics and calculations displayed in real time.',
+      features: [
+        'Provides and constantly updates race metrics like best lap time, time in session, interval after the leader, and other',
+        'TypeScript (React/Redux), Redux SignalR middelware, CSS Modules',
+        'Design tokens via CSS custom properties',
+        'Designed in Figma',
+        'Icons created in Inkscape'
+      ],
+      linkGithubText: 'Go to the app repository on Github',
+      linkGithubHref: 'https://github.com/zverolen/dashboard-demo'
+    },
+    {
+      id: 2,
       name: 'Learning app',
       imageToken: 'vocab',
-      description: 'A React app that helps to study Serbian language. It allows to practice translating phrases from Russian into Serbian and to check the result. Currently the project is at the early stage and is waiting for the redesign and adding more sophisticated functionality.',
+      description: 'A React app that helps to study Serbian language (stage 1). It allows to practice translating phrases from Russian into Serbian and to check the result. Currently the project is at the early stage and is waiting for the redesign and adding more sophisticated functionality.',
       features: [
         'Uses two langauges: Russian and Serbian',
         'JS (React), CSS',
@@ -26,7 +42,7 @@ export const projects = {
       linkBrowserHref: '/znaju/znaju'
     },
     {
-      id: 2,
+      id: 3,
       name: 'My Portfolio Website',
       imageToken: 'portfolio',
       description: 'A website to showcase my projects. Most accurately demonstrates my skills and my approach. The design goal was to provide the viewer with content in the least time-consuming way. The development goal was to create a modern website using some React for an interactive component.',
@@ -58,7 +74,7 @@ export const projects = {
       linkBrowserHref: '/o2/o2'
     },
     {
-      id: 3,
+      id: 5,
       name: 'Local vampire club',
       imageToken: 'flight',
       description: 'This is a website for Night Flight - a local club for Sydney vampires who turn into bats and fly together. It was developed as a project for a Codecademy course. The assignment was to create a responsive website for a local club, utilizing flexible design principles without fixed values. The site features a simulated form submission widget (React).',

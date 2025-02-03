@@ -8,7 +8,7 @@ export default function Header() {
             Lena Zvereva 
           </span>
           <span className="site-frame">
-              Front-End 
+              Frontend 
           </span>
         <span className="site-frame">
           <span>
