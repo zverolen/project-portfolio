@@ -56,9 +56,9 @@
       --text-color: var(--site-background-color);
     }
 
-    .projects img {
+    /* .projects img {
       --border-color: var(--site-background-color);
-    }
+    } */
 
     .project {
       --border-color: var(--site-text-color);
@@ -173,9 +173,9 @@
       --border-color: var(--site-text-color);
     }
 
-    .projects img {
+    /* .projects img {
       --border-color: var(--site-text-color);
-    }
+    } */
 
     .project svg rect:nth-child(1) {
       --fill-color: var(--decorative-color-I);

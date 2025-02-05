@@ -15,8 +15,24 @@ export default function Project({
       <Disclosure projectName={project.name}>
         <div aria-live="polite">
         <div>
-            <img 
-              src={`./images/flight-mock-210.png`}
+          <img 
+                src={`./${project.imageToken}-mock-210.png`}
+                sizes="(min-width: calc(1344 / 16 * 1rem)) 75.5rem,
+                      (min-width: calc(976 / 16 * 1rem)) 52.625rem,
+                      (min-width: calc(761 / 16 * 1rem)) 40rem,
+                      13.125rem"
+                srcSet={`./images/${project.imageToken}-mock-210.png 210w,
+                        ./images/${project.imageToken}-mock-842.png 842w,
+                        ./images/${project.imageToken}-mock-640.png 640w,
+                        ./images/${project.imageToken}-mock-1237.png 1237w,
+                        ./images/${project.imageToken}-mock-1612.png 1612w,
+                        ./images/${project.imageToken}-mock-1800.png 1800w,
+                        ./images/${project.imageToken}-mock-2012.png 2012w,
+                        ./images/${project.imageToken}-mock-2424.png 2424w`}
+                alt={`A computer and a smartphone with open project ${project.name}`}
+              />
+            {/* <img 
+              src={`./${project.imageToken}-mock-210.png`}
               sizes="(min-width: calc(1462 / 16 * 1rem)) 75.75rem,
                      (min-width: calc(1300 / 16 * 1rem)) 73.875rem,
                      (min-width: calc(1100 / 16 * 1rem)) 61.5rem,
@@ -43,7 +59,7 @@ export default function Project({
                       ./images/${project.imageToken}-mock-2364.png 2364w,
                       ./images/${project.imageToken}-mock-2424.png 2430w`}
               alt={`A computer and a smartphone with views of the project ${project.name}`}
-            />
+            /> */}
             <div>
               <h4 aria-label={`Description of the ${project.name} project`}>Description</h4>
               <p>{project.description}</p>

@@ -183,7 +183,7 @@ header svg {
 .projects img {
   margin-block-end: var(--gap-II);
 
-  border: var(--border-width) var(--border-color) solid;
+  /* border: var(--border-width) var(--border-color) solid; */
 }
 
 .project > div:nth-child(2) > div > div, .project ul {
